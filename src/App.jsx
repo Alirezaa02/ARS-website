@@ -1,0 +1,51 @@
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Pricing from "./pages/Pricing";
+import Book from "./pages/Book";
+import Contact from "./pages/Contact";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
+
+function Page({ children }) {
+  return (
+    <motion.main
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -8 }}
+      transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+    >
+      {children}
+    </motion.main>
+  );
+}
+
+export default function App() {
+  const location = useLocation();
+  return (
+    <div className="relative min-h-screen">
+      <ScrollToTop />
+      <Navbar />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Page><Home /></Page>} />
+          <Route path="/services" element={<Page><Services /></Page>} />
+          <Route path="/pricing" element={<Page><Pricing /></Page>} />
+          <Route path="/book" element={<Page><Book /></Page>} />
+          <Route path="/contact" element={<Page><Contact /></Page>} />
+        </Routes>
+      </AnimatePresence>
+      <Footer />
+    </div>
+  );
+}

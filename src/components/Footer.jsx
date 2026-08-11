@@ -1,0 +1,76 @@
+import { Link } from "react-router-dom";
+import { Reveal } from "../lib/motion";
+
+export default function Footer() {
+  return (
+    <footer className="relative mt-10 border-t border-white/5">
+      {/* CTA band */}
+      <div className="mx-auto max-w-6xl px-6 py-20">
+        <Reveal className="relative overflow-hidden rounded-3xl border border-accent/20 bg-gradient-to-br from-accent/[0.12] via-ink-800/40 to-transparent p-10 text-center md:p-16">
+          <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-accent/20 blur-3xl" />
+          <div className="absolute -bottom-24 -right-16 h-64 w-64 rounded-full bg-accent-blue/20 blur-3xl" />
+          <div className="relative">
+            <h2 className="mx-auto max-w-2xl font-display text-3xl font-bold tracking-tight text-white md:text-4xl">
+              Stop letting good jobs slip through the cracks
+            </h2>
+            <p className="mx-auto mt-4 max-w-lg text-slate-300">
+              Book a free demo and watch ARS capture a live enquiry from start to booked.
+            </p>
+            <Link to="/book" className="btn-primary mt-8">
+              Book a free demo
+            </Link>
+          </div>
+        </Reveal>
+      </div>
+
+      <div className="border-t border-white/5">
+        <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-12 md:flex-row md:items-start md:justify-between">
+          <div className="max-w-xs">
+            <div className="flex items-center gap-2.5">
+              <img src="/favicon.svg" alt="" aria-hidden="true" className="h-8 w-8" />
+              <span className="font-display text-lg font-semibold text-white">
+                ARS<span className="text-accent">.</span>
+              </span>
+            </div>
+            <p className="mt-4 text-sm text-slate-500">
+              AI customer service systems and websites for Australian small businesses.
+              Built in Brisbane by Ali.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-10 sm:grid-cols-3">
+            <div>
+              <h4 className="mb-3 font-mono text-xs uppercase tracking-widest text-slate-500">Product</h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link to="/services" className="text-slate-400 hover:text-accent">AI system</Link></li>
+                <li><Link to="/services" className="text-slate-400 hover:text-accent">Websites</Link></li>
+                <li><Link to="/pricing" className="text-slate-400 hover:text-accent">Pricing</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="mb-3 font-mono text-xs uppercase tracking-widest text-slate-500">Company</h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link to="/book" className="text-slate-400 hover:text-accent">Book a demo</Link></li>
+                <li><Link to="/contact" className="text-slate-400 hover:text-accent">Contact</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="mb-3 font-mono text-xs uppercase tracking-widest text-slate-500">Get in touch</h4>
+              <ul className="space-y-2 text-sm">
+                <li><a href="mailto:hello@ars.com.au" className="text-slate-400 hover:text-accent">hello@ars.com.au</a></li>
+                <li><span className="text-slate-400">Brisbane, AU</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-white/5">
+          <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-6 text-xs text-slate-600 sm:flex-row sm:items-center sm:justify-between">
+            <span>© {new Date().getFullYear()} ARS. All rights reserved.</span>
+            <span>Made in Brisbane · Never miss a lead again.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
