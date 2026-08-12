@@ -7,14 +7,30 @@ const field =
 
 export default function Contact({ standalone = false }) {
   const [sent, setSent] = useState(false);
-  const [form, setForm] = useState({ name: "", email: "", business: "", message: "" });
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
+  const [form, setForm] = useState({ name: "", email: "", business: "", message: "", company: "" });
 
   const update = (k) => (e) => setForm({ ...form, [k]: e.target.value });
 
-  const submit = (e) => {
+  const submit = async (e) => {
     e.preventDefault();
-    // Placeholder: wire this to your email service / backend.
-    setSent(true);
+    setSending(true);
+    setError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Something went wrong.");
+      setSent(true);
+    } catch (err) {
+      setError(err.message || "Something went wrong. Try again or email hello@ars.com.au directly.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -74,6 +90,15 @@ export default function Contact({ standalone = false }) {
                     animate={{ opacity: 1 }}
                     className="space-y-4"
                   >
+                    <input
+                      type="text"
+                      value={form.company}
+                      onChange={update("company")}
+                      tabIndex={-1}
+                      autoComplete="off"
+                      aria-hidden="true"
+                      className="absolute -left-[9999px] h-px w-px opacity-0"
+                    />
                     <div className="grid gap-4 sm:grid-cols-2">
                       <div>
                         <label className="mb-1.5 block text-xs text-slate-400">Your name</label>
@@ -92,12 +117,14 @@ export default function Contact({ standalone = false }) {
                       <label className="mb-1.5 block text-xs text-slate-400">What are you after?</label>
                       <textarea required rows={5} value={form.message} onChange={update("message")} className={`${field} resize-none`} placeholder="Tell me about your enquiries and how you handle them now..." />
                     </div>
-                    <button type="submit" className="btn-primary w-full">
-                      Send message
+                    {error && (
+                      <p className="rounded-lg border border-red-500/20 bg-red-500/10 px-4 py-2.5 text-sm text-red-300">
+                        {error}
+                      </p>
+                    )}
+                    <button type="submit" disabled={sending} className="btn-primary w-full disabled:opacity-60">
+                      {sending ? "Sending…" : "Send message"}
                     </button>
-                    <p className="text-center text-xs text-slate-600">
-                      Placeholder form — connect to your email service to go live.
-                    </p>
                   </motion.form>
                 )}
               </AnimatePresence>
