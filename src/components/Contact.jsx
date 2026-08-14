@@ -27,7 +27,7 @@ export default function Contact({ standalone = false }) {
       if (!res.ok) throw new Error(data.error || "Something went wrong.");
       setSent(true);
     } catch (err) {
-      setError(err.message || "Something went wrong. Try again or email hello@ars.com.au directly.");
+      setError(err.message || "Something went wrong. Try again or email saebalireza02@gmail.com directly.");
     } finally {
       setSending(false);
     }
@@ -47,11 +47,11 @@ export default function Contact({ standalone = false }) {
               within a business day.
             </p>
             <div className="mt-8 space-y-4 text-sm">
-              <a href="mailto:hello@ars.com.au" className="flex items-center gap-3 text-slate-300 hover:text-accent">
+              <a href="mailto:saebalireza02@gmail.com" className="flex items-center gap-3 text-slate-300 hover:text-accent">
                 <span className="grid h-9 w-9 place-items-center rounded-lg border border-white/10 bg-white/5">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4zM4 7l8 6 8-6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </span>
-                hello@ars.com.au
+                saebalireza02@gmail.com
               </a>
               <div className="flex items-center gap-3 text-slate-300">
                 <span className="grid h-9 w-9 place-items-center rounded-lg border border-white/10 bg-white/5">

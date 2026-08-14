@@ -57,7 +57,7 @@ export default function Footer() {
             <div>
               <h4 className="mb-3 font-mono text-xs uppercase tracking-widest text-slate-500">Get in touch</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="mailto:hello@ars.com.au" className="text-slate-400 hover:text-accent">hello@ars.com.au</a></li>
+                <li><a href="mailto:saebalireza02@gmail.com" className="text-slate-400 hover:text-accent">saebalireza02@gmail.com</a></li>
                 <li><span className="text-slate-400">Brisbane, AU</span></li>
               </ul>
             </div>

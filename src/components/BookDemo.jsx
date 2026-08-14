@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Reveal } from "../lib/motion";
 
 const perks = [
-  "A 20-minute, no-pressure walkthrough",
+  "A 30-minute, no-pressure walkthrough",
   "See the AI capture and book a live enquiry",
   "A recommended setup and honest price for your business",
 ];
@@ -59,8 +59,8 @@ export default function BookDemo() {
             <div className="glass mt-10 rounded-xl p-5">
               <p className="text-sm text-slate-400">
                 Prefer to talk first? Reach me directly at{" "}
-                <a href="mailto:hello@ars.com.au" className="text-accent hover:underline">
-                  hello@ars.com.au
+                <a href="mailto:saebalireza02@gmail.com" className="text-accent hover:underline">
+                  saebalireza02@gmail.com
                 </a>
                 .
               </p>

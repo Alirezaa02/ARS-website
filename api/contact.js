@@ -11,7 +11,7 @@ export default async function handler(req, res) {
 
   if (!process.env.RESEND_API_KEY) {
     console.error("RESEND_API_KEY is not set");
-    return res.status(500).json({ error: "Email service isn't configured yet. Email hello@ars.com.au directly." });
+    return res.status(500).json({ error: "Email service isn't configured yet. Email saebalireza02@gmail.com directly." });
   }
 
   const { name, email, business, message, company } = req.body || {};
