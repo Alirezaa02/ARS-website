@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Reveal } from "../lib/motion";
 
@@ -6,6 +7,28 @@ const perks = [
   "See the AI capture and book a live enquiry",
   "A recommended setup and honest price for your business",
 ];
+
+const CALENDLY_URL =
+  "https://calendly.com/saebalireza02/ars-demo-call?background_color=080b14&text_color=ffffff&primary_color=22e3c3&hide_gdpr_banner=1";
+
+function CalendlyWidget() {
+  useEffect(() => {
+    const src = "https://assets.calendly.com/assets/external/widget.js";
+    if (document.querySelector(`script[src="${src}"]`)) return;
+    const script = document.createElement("script");
+    script.src = src;
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
+  return (
+    <div
+      className="calendly-inline-widget"
+      data-url={CALENDLY_URL}
+      style={{ minWidth: "320px", height: "650px" }}
+    />
+  );
+}
 
 export default function BookDemo() {
   return (
@@ -45,33 +68,14 @@ export default function BookDemo() {
           </Reveal>
 
           <Reveal delay={0.15}>
-            {/* Calendly embed placeholder — drop your real embed here */}
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="glass rounded-2xl p-2 shadow-card"
+              className="glass overflow-hidden rounded-2xl p-2 shadow-card"
             >
-              <div className="grid min-h-[520px] place-items-center rounded-xl border border-dashed border-white/10 bg-ink-900/60 p-8 text-center">
-                <div>
-                  <div className="mx-auto mb-5 grid h-16 w-16 place-items-center rounded-2xl border border-accent/20 bg-accent/5">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="text-accent">
-                      <path d="M8 2v4M16 2v4M3 10h18M5 6h14v14H5z" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </div>
-                  <h3 className="font-display text-lg font-semibold text-white">
-                    Calendly booking widget
-                  </h3>
-                  <p className="mx-auto mt-2 max-w-sm text-sm text-slate-500">
-                    Replace this placeholder with your Calendly inline embed. The dark
-                    theme and rounded frame are already set up to match.
-                  </p>
-                  <code className="mt-5 inline-block rounded-lg bg-black/40 px-4 py-2 font-mono text-xs text-accent">
-                    {'<div class="calendly-inline-widget" ... />'}
-                  </code>
-                </div>
-              </div>
+              <CalendlyWidget />
             </motion.div>
           </Reveal>
         </div>
