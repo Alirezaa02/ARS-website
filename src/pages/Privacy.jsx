@@ -44,10 +44,13 @@ export default function Privacy() {
             </li>
           </ul>
           <p className={p}>
-            We do not use cookies or analytics tracking on this site. Our hosting provider
-            (Vercel) automatically logs standard technical information for every visitor — such
-            as IP address and browser type — purely for security and reliability, as is normal
-            for any website host.
+            We use Vercel Analytics to understand overall traffic to this site — things like
+            which pages are visited and roughly where visitors come from. It doesn't use
+            cookies, doesn't track you individually, and doesn't collect personal information;
+            it only reports anonymous, aggregated numbers. Our hosting provider (Vercel) also
+            automatically logs standard technical information for every visitor — such as IP
+            address and browser type — purely for security and reliability, as is normal for
+            any website host.
           </p>
 
           <h2 className={h2}>Why we collect it</h2>
@@ -70,7 +73,8 @@ export default function Privacy() {
               <strong className="text-slate-300">Calendly</strong> — powers demo call bookings.
             </li>
             <li>
-              <strong className="text-slate-300">Vercel</strong> — hosts this website.
+              <strong className="text-slate-300">Vercel</strong> — hosts this website and
+              provides anonymous, cookieless traffic analytics.
             </li>
           </ul>
           <p className={p}>
