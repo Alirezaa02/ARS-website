@@ -67,7 +67,11 @@ export default function Footer() {
         <div className="border-t border-white/5">
           <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-6 text-xs text-slate-600 sm:flex-row sm:items-center sm:justify-between">
             <span>© {new Date().getFullYear()} ARS. All rights reserved.</span>
-            <span>Made in Brisbane · Never miss a lead again.</span>
+            <div className="flex items-center gap-4">
+              <Link to="/privacy" className="hover:text-accent">Privacy</Link>
+              <Link to="/terms" className="hover:text-accent">Terms</Link>
+              <span>Made in Brisbane · Never miss a lead again.</span>
+            </div>
           </div>
         </div>
       </div>
