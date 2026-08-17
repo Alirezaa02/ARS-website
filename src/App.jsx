@@ -20,6 +20,19 @@ function ScrollToTop() {
   return null;
 }
 
+function GAPageView() {
+  const location = useLocation();
+  useEffect(() => {
+    if (typeof window.gtag !== "function") return;
+    window.gtag("event", "page_view", {
+      page_path: location.pathname + location.search,
+      page_location: window.location.href,
+      page_title: document.title,
+    });
+  }, [location]);
+  return null;
+}
+
 function Page({ children }) {
   return (
     <motion.main
@@ -38,6 +51,7 @@ export default function App() {
   return (
     <div className="relative min-h-screen">
       <ScrollToTop />
+      <GAPageView />
       <Navbar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>

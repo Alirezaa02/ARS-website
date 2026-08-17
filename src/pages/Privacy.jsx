@@ -44,10 +44,20 @@ export default function Privacy() {
             </li>
           </ul>
           <p className={p}>
-            We use Vercel Analytics to understand overall traffic to this site — things like
-            which pages are visited and roughly where visitors come from. It doesn't use
-            cookies, doesn't track you individually, and doesn't collect personal information;
-            it only reports anonymous, aggregated numbers. Our hosting provider (Vercel) also
+            We use Vercel Analytics and Google Analytics to understand traffic to this site —
+            things like which pages are visited, roughly where visitors come from, and how they
+            found us. Vercel Analytics is cookieless and only reports anonymous, aggregated
+            numbers. Google Analytics does use cookies to distinguish visitors and recognise
+            repeat visits; you can opt out at any time using{" "}
+            <a
+              href="https://tools.google.com/dlpage/gaoptout"
+              target="_blank"
+              rel="noreferrer"
+              className="text-accent hover:underline"
+            >
+              Google's browser opt-out
+            </a>{" "}
+            or by blocking cookies in your browser settings. Our hosting provider (Vercel) also
             automatically logs standard technical information for every visitor — such as IP
             address and browser type — purely for security and reliability, as is normal for
             any website host.
@@ -75,6 +85,19 @@ export default function Privacy() {
             <li>
               <strong className="text-slate-300">Vercel</strong> — hosts this website and
               provides anonymous, cookieless traffic analytics.
+            </li>
+            <li>
+              <strong className="text-slate-300">Google Analytics</strong> — provides more
+              detailed traffic and audience reporting. See Google's{" "}
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noreferrer"
+                className="text-accent hover:underline"
+              >
+                privacy policy
+              </a>
+              .
             </li>
           </ul>
           <p className={p}>
