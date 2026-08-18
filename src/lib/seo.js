@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const SITE = "https://arswebservices.com";
+const SITE = "https://www.arswebservices.com";
 
 function setMeta(selector, attr, value) {
   const tag = document.querySelector(selector);
