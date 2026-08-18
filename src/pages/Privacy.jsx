@@ -1,10 +1,16 @@
 import { Reveal } from "../lib/motion";
+import { useSEO } from "../lib/seo";
 
 const h2 = "mt-10 font-display text-xl font-semibold text-white";
 const p = "mt-3 text-slate-400 leading-relaxed";
 const ul = "mt-3 space-y-2 text-slate-400 leading-relaxed list-disc pl-5";
 
 export default function Privacy() {
+  useSEO({
+    title: "Privacy Policy — ARS",
+    description: "How ARS collects, uses, and protects your personal information when you use arswebservices.com.",
+    path: "/privacy",
+  });
   return (
     <section className="pt-36 pb-24">
       <div className="mx-auto max-w-3xl px-6">

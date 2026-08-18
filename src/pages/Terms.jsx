@@ -1,9 +1,15 @@
 import { Reveal } from "../lib/motion";
+import { useSEO } from "../lib/seo";
 
 const h2 = "mt-10 font-display text-xl font-semibold text-white";
 const p = "mt-3 text-slate-400 leading-relaxed";
 
 export default function Terms() {
+  useSEO({
+    title: "Terms of Use — ARS",
+    description: "Terms governing your use of the ARS website, arswebservices.com.",
+    path: "/terms",
+  });
   return (
     <section className="pt-36 pb-24">
       <div className="mx-auto max-w-3xl px-6">

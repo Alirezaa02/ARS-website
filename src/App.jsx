@@ -11,6 +11,7 @@ import Book from "./pages/Book";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import NotFound from "./pages/NotFound";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -62,6 +63,7 @@ export default function App() {
           <Route path="/contact" element={<Page><Contact /></Page>} />
           <Route path="/privacy" element={<Page><Privacy /></Page>} />
           <Route path="/terms" element={<Page><Terms /></Page>} />
+          <Route path="*" element={<Page><NotFound /></Page>} />
         </Routes>
       </AnimatePresence>
       <Footer />
