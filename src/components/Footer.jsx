@@ -36,6 +36,35 @@ export default function Footer() {
               AI customer service systems and websites for Australian small businesses.
               Built in Brisbane by Ali.
             </p>
+            <div className="mt-5 flex items-center gap-3">
+              <a
+                href="https://www.linkedin.com/company/arswebservices"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="ARS on LinkedIn"
+                className="grid h-9 w-9 place-items-center rounded-lg border border-white/10 bg-white/5 text-slate-400 transition-colors hover:border-accent/40 hover:text-accent"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" strokeWidth="1.6" />
+                  <circle cx="8" cy="8" r="1.1" fill="currentColor" />
+                  <path d="M8 11v6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                  <path d="M12.5 17v-4c0-1.1.9-2 2-2s2 .9 2 2v4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/arswebservices"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="ARS on Instagram"
+                className="grid h-9 w-9 place-items-center rounded-lg border border-white/10 bg-white/5 text-slate-400 transition-colors hover:border-accent/40 hover:text-accent"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.6" />
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.6" />
+                  <circle cx="17" cy="7" r="1" fill="currentColor" />
+                </svg>
+              </a>
+            </div>
           </div>
 
           <div className="grid grid-cols-2 gap-10 sm:grid-cols-3">
