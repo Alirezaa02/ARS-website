@@ -1,0 +1,49 @@
+import { motion } from "framer-motion";
+
+function StepIcon({ icon }) {
+  return (
+    <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-accent/20 bg-accent/10 text-accent">
+      {icon}
+    </div>
+  );
+}
+
+function Connector({ delay = 0 }) {
+  return (
+    <div className="relative mx-1 h-px flex-1 overflow-hidden bg-white/10 sm:mx-2">
+      <motion.div
+        className="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-transparent via-accent to-transparent"
+        initial={{ x: "-100%" }}
+        whileInView={{ x: "300%" }}
+        viewport={{ once: false }}
+        transition={{ duration: 1.8, repeat: Infinity, repeatDelay: 0.6, delay, ease: "easeInOut" }}
+      />
+    </div>
+  );
+}
+
+export function WorkflowCard({ tag, title, description, steps }) {
+  return (
+    <div className="glass glass-hover rounded-2xl p-6 md:p-7">
+      <div className="flex items-center justify-between">
+        <span className="font-mono text-xs uppercase tracking-widest text-accent">{tag}</span>
+        <span className="font-mono text-[10px] uppercase tracking-widest text-slate-600">ARS</span>
+      </div>
+
+      <div className="mt-6 flex items-center">
+        {steps.map((step, i) => (
+          <div key={step.label} className="flex flex-1 items-center last:flex-none">
+            <div className="flex flex-col items-center gap-2 text-center">
+              <StepIcon icon={step.icon} />
+              <span className="max-w-[80px] text-xs leading-tight text-slate-400">{step.label}</span>
+            </div>
+            {i < steps.length - 1 && <Connector delay={i * 0.15} />}
+          </div>
+        ))}
+      </div>
+
+      <h3 className="mt-6 font-display text-lg font-semibold text-white">{title}</h3>
+      <p className="mt-2 text-sm leading-relaxed text-slate-400">{description}</p>
+    </div>
+  );
+}
