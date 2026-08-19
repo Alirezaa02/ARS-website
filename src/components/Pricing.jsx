@@ -7,7 +7,8 @@ const plans = [
     name: "Starter",
     blurb: "For a solo operator who just needs to stop missing enquiries.",
     setup: "$990",
-    monthly: "$200",
+    setupNote: "Connecting your inbox and web forms, tuning the AI to your business.",
+    monthly: "$150",
     features: [
       "Email & web-form AI agent",
       "One-tap Approve / Reject summaries",
@@ -20,7 +21,8 @@ const plans = [
     name: "Growth",
     blurb: "The full system for a busy business that lives and dies by its bookings.",
     setup: "$2,000",
-    monthly: "$400",
+    setupNote: "Everything in Starter, plus training the phone AI and wiring up calendar booking.",
+    monthly: "$300",
     featured: true,
     features: [
       "Everything in Starter",
@@ -34,7 +36,8 @@ const plans = [
     name: "Complete",
     blurb: "AI system plus a custom website built to feed it, done end to end.",
     setup: "$3,500",
-    monthly: "$600",
+    setupNote: "Everything in Growth, plus designing and building your website.",
+    monthly: "$450",
     features: [
       "Everything in Growth",
       "Custom business website",
@@ -88,6 +91,7 @@ export default function Pricing({ compact = false }) {
                   <p className="mt-1 text-sm text-slate-500">
                     + {p.setup} one-off setup
                   </p>
+                  <p className="mt-1 text-xs text-slate-600">{p.setupNote}</p>
                 </div>
 
                 <ul className="mt-6 flex-1 space-y-3">

@@ -4,7 +4,7 @@ import { Reveal } from "../lib/motion";
 
 const services = [
   {
-    tag: "Main product",
+    tag: "AI system",
     title: "AI Customer Service System",
     body: "A complete AI team-member that handles enquiries across email, web forms, and phone — capturing leads, summarising them for your approval, and booking jobs into your calendar.",
     points: [
@@ -17,14 +17,16 @@ const services = [
     featured: true,
   },
   {
-    tag: "Also available",
+    tag: "Websites",
     title: "Custom Business Websites",
-    body: "A fast, modern website that actually brings work in — designed to match your brand and wired to feed straight into your AI customer service system.",
+    body: "A fast, modern website that actually brings work in — designed around your brand, built up to 12 pages, and wired to feed straight into your AI customer service system if you use both.",
     points: [
-      "Clean, mobile-first design built to convert",
+      "Clean, mobile-first design built to convert — up to 12 pages",
+      "Custom logo design included",
+      "Google Business Profile set up for you",
+      "Basic SEO — meta tags, sitemap, structured data",
+      "Business email set up on your own domain",
       "Enquiry forms that plug directly into your AI agent",
-      "Fast, secure hosting and easy updates",
-      "Built to rank and load quickly on any device",
     ],
   },
 ];
@@ -38,8 +40,8 @@ export default function Services() {
           Two ways ARS helps you win more work
         </h2>
         <p className="mt-4 text-slate-400">
-          Start with the AI system, add a website that feeds it, or do both. Everything's
-          built for you and tuned to how your business already runs.
+          A new website, the AI system, or both together — everything's built for you and
+          tuned to how your business already runs.
         </p>
       </Reveal>
 
