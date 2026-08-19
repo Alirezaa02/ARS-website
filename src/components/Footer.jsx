@@ -73,6 +73,7 @@ export default function Footer() {
               <ul className="space-y-2 text-sm">
                 <li><Link to="/services" className="text-slate-400 hover:text-accent">AI system</Link></li>
                 <li><Link to="/services" className="text-slate-400 hover:text-accent">Websites</Link></li>
+                <li><Link to="/industries" className="text-slate-400 hover:text-accent">Industries</Link></li>
                 <li><Link to="/pricing" className="text-slate-400 hover:text-accent">Pricing</Link></li>
               </ul>
             </div>

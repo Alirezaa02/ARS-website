@@ -14,6 +14,7 @@ import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 import Blog from "./pages/Blog";
 import AiAnsweringServiceCostAustralia from "./pages/blog/AiAnsweringServiceCostAustralia";
+import Industries from "./pages/Industries";
 import Construction from "./pages/industries/Construction";
 
 function ScrollToTop() {
@@ -69,6 +70,7 @@ export default function App() {
             path="/blog/ai-answering-service-cost-australia"
             element={<Page><AiAnsweringServiceCostAustralia /></Page>}
           />
+          <Route path="/industries" element={<Page><Industries /></Page>} />
           <Route path="/industries/construction" element={<Page><Construction /></Page>} />
           <Route path="/privacy" element={<Page><Privacy /></Page>} />
           <Route path="/terms" element={<Page><Terms /></Page>} />
