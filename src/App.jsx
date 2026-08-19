@@ -12,6 +12,8 @@ import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
+import Blog from "./pages/Blog";
+import AiAnsweringServiceCostAustralia from "./pages/blog/AiAnsweringServiceCostAustralia";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -61,6 +63,11 @@ export default function App() {
           <Route path="/pricing" element={<Page><Pricing /></Page>} />
           <Route path="/book" element={<Page><Book /></Page>} />
           <Route path="/contact" element={<Page><Contact /></Page>} />
+          <Route path="/blog" element={<Page><Blog /></Page>} />
+          <Route
+            path="/blog/ai-answering-service-cost-australia"
+            element={<Page><AiAnsweringServiceCostAustralia /></Page>}
+          />
           <Route path="/privacy" element={<Page><Privacy /></Page>} />
           <Route path="/terms" element={<Page><Terms /></Page>} />
           <Route path="*" element={<Page><NotFound /></Page>} />

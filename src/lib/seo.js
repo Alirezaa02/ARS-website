@@ -33,3 +33,16 @@ export function useSEO({ title, description, path = "", noindex = false }) {
     }
   }, [title, description, path, noindex]);
 }
+
+export function useJsonLd(id, data) {
+  useEffect(() => {
+    if (!data) return;
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = id;
+    script.textContent = JSON.stringify(data);
+    document.head.appendChild(script);
+    return () => script.remove();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id]);
+}
