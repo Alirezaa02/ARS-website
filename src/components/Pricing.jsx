@@ -6,8 +6,8 @@ const plans = [
   {
     name: "Starter",
     blurb: "For a solo operator who just needs to stop missing enquiries.",
-    setup: "$1,500",
-    monthly: "$150",
+    setup: "$990",
+    monthly: "$200",
     features: [
       "Email & web-form AI agent",
       "One-tap Approve / Reject summaries",
@@ -19,8 +19,8 @@ const plans = [
   {
     name: "Growth",
     blurb: "The full system for a busy business that lives and dies by its bookings.",
-    setup: "$3,000",
-    monthly: "$300",
+    setup: "$2,000",
+    monthly: "$400",
     featured: true,
     features: [
       "Everything in Starter",
@@ -33,8 +33,8 @@ const plans = [
   {
     name: "Complete",
     blurb: "AI system plus a custom website built to feed it, done end to end.",
-    setup: "$5,000",
-    monthly: "$500",
+    setup: "$3,500",
+    monthly: "$600",
     features: [
       "Everything in Growth",
       "Custom business website",

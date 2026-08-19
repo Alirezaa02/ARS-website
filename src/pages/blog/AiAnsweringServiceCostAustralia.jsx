@@ -8,7 +8,7 @@ const ul = "mt-3 space-y-2 text-slate-400 leading-relaxed list-disc pl-5";
 
 const TITLE = "AI Answering Service Cost in Australia (2026)";
 const DESCRIPTION =
-  "What does an AI answering service actually cost in Australia? A plain-English breakdown of setup fees, monthly pricing, and what you get — from $150/month.";
+  "What does an AI answering service actually cost in Australia? A plain-English breakdown of setup fees, monthly pricing, and what you get — from $200/month.";
 const PATH = "/blog/ai-answering-service-cost-australia";
 const DATE = "2026-08-19";
 
@@ -87,7 +87,7 @@ export default function AiAnsweringServiceCostAustralia() {
             AI answering and customer service systems for Australian small businesses typically
             run as a <strong className="text-slate-300">one-off setup fee plus a flat monthly
             subscription</strong>. At ARS, plans start at{" "}
-            <strong className="text-slate-300">$150/month with a $1,500 one-off setup</strong>,
+            <strong className="text-slate-300">$200/month with a $990 one-off setup</strong>,
             and scale up from there depending on how much you need the system to do.
           </p>
           <p className={p}>
@@ -120,17 +120,17 @@ export default function AiAnsweringServiceCostAustralia() {
           <ul className={ul}>
             <li>
               <strong className="text-slate-300">Solo operator, just stop missing enquiries</strong> —
-              expect around $150/month plus a setup fee in the low thousands. This handles email
+              expect around $200/month plus a setup fee from around $990. This handles email
               and web-form enquiries and saves every lead so nothing gets lost.
             </li>
             <li>
               <strong className="text-slate-300">Busy, booking-driven business</strong> — around
-              $300/month plus setup. This adds missed-call phone answering and automatic
+              $400/month plus setup. This adds missed-call phone answering and automatic
               scheduling into your Outlook calendar.
             </li>
             <li>
               <strong className="text-slate-300">Full system with a website</strong> — around
-              $500/month plus setup, where the AI system is paired with a custom website built
+              $600/month plus setup, where the AI system is paired with a custom website built
               to feed enquiries straight into it.
             </li>
           </ul>
