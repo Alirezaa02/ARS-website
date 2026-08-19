@@ -24,26 +24,29 @@ function Connector({ delay = 0 }) {
 
 export function WorkflowCard({ tag, title, description, steps }) {
   return (
-    <div className="glass glass-hover rounded-2xl p-6 md:p-7">
-      <div className="flex items-center justify-between">
-        <span className="font-mono text-xs uppercase tracking-widest text-accent">{tag}</span>
-        <span className="font-mono text-[10px] uppercase tracking-widest text-slate-600">ARS</span>
-      </div>
+    <div className="glass glass-hover relative overflow-hidden rounded-2xl p-6 md:p-7">
+      <div className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-accent/10 blur-2xl" />
+      <div className="relative">
+        <div className="flex items-center justify-between">
+          <span className="font-mono text-xs uppercase tracking-widest text-accent">{tag}</span>
+          <span className="font-mono text-[10px] uppercase tracking-widest text-slate-600">ARS</span>
+        </div>
 
-      <div className="mt-6 flex items-center">
-        {steps.map((step, i) => (
-          <div key={step.label} className="flex flex-1 items-center last:flex-none">
-            <div className="flex flex-col items-center gap-2 text-center">
-              <StepIcon icon={step.icon} />
-              <span className="max-w-[80px] text-xs leading-tight text-slate-400">{step.label}</span>
+        <div className="mt-6 flex items-center">
+          {steps.map((step, i) => (
+            <div key={step.label} className="flex flex-1 items-center last:flex-none">
+              <div className="flex flex-col items-center gap-2 text-center">
+                <StepIcon icon={step.icon} />
+                <span className="max-w-[80px] text-xs leading-tight text-slate-400">{step.label}</span>
+              </div>
+              {i < steps.length - 1 && <Connector delay={i * 0.15} />}
             </div>
-            {i < steps.length - 1 && <Connector delay={i * 0.15} />}
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      <h3 className="mt-6 font-display text-lg font-semibold text-white">{title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-slate-400">{description}</p>
+        <h3 className="mt-6 font-display text-lg font-semibold text-white">{title}</h3>
+        <p className="mt-2 text-sm leading-relaxed text-slate-400">{description}</p>
+      </div>
     </div>
   );
 }

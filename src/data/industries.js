@@ -11,11 +11,11 @@ import {
 } from "../components/industries/icons";
 
 export const howItWorks = [
-  { step: "01", title: "Free demo", body: "See it handle a real enquiry for your business before you commit to anything." },
-  { step: "02", title: "Build & tune", body: "The system is built around your services, pricing, and the tools you already use." },
-  { step: "03", title: "Test it", body: "Real enquiries run through it before it goes live, so nothing's a surprise." },
-  { step: "04", title: "Go live", body: "It starts handling enquiries and booking jobs straight away." },
-  { step: "05", title: "Ongoing support", body: "Updated and supported as your business changes — no lock-in." },
+  { n: "01", title: "A free demo", body: "See it handle a real enquiry for your business before you commit to anything." },
+  { n: "02", title: "Built around you", body: "Tuned to your services, your pricing, and the tools you already use — no migration." },
+  { n: "03", title: "Tested first", body: "Real enquiries run through it before it ever touches a real customer." },
+  { n: "04", title: "It goes live", body: "It starts answering enquiries and booking jobs straight away." },
+  { n: "05", title: "Kept running", body: "Updated and supported as your business changes. No lock-in." },
 ];
 
 export const industries = [
@@ -24,22 +24,23 @@ export const industries = [
     category: "Trades",
     name: "Building & Construction",
     headline: "AI for Builders & Construction Companies in Australia",
-    subheadline: "From first enquiry to the next follow-up, automated.",
+    headlineAccent: "Construction Companies",
+    subheadline: "Answer every enquiry, chase every invoice, without adding admin.",
     intro:
-      "Construction has long sales cycles, heavy admin, and too many stakeholders to keep across. ARS builds AI systems for builders in Brisbane and across Australia that handle enquiry capture, document follow-up, client updates, and payment chasing — so your team can focus on building, not admin.",
+      "You're on site, not by a screen — but the enquiry still needs a reply, the RFQ still needs reading, and the client still wants an update. ARS builds AI systems for builders in Brisbane and across Australia that handle all of it, so your team stays focused on the build, not the inbox.",
     typicalTimeline: "Typically 2–4 weeks to go live",
     challenges: [
       {
-        title: "Slow responses lose tenders",
-        body: "A builder who acknowledges a project enquiry within minutes has a real edge over one relying on a PM to reply between site visits.",
+        title: "A missed call is a missed tender",
+        body: "The builder who replies to a project enquiry within minutes usually wins it. The one who replies from the ute after knock-off usually doesn't.",
       },
       {
-        title: "Document chaos eats PM time",
-        body: "Reading RFQs, chasing missing details, and drafting follow-ups is repetitive work that pulls PMs away from actually running jobs.",
+        title: "Paperwork eats the hours you don't have",
+        body: "Reading RFQs, chasing missing details, drafting follow-ups — it's real work, but it's not the work you actually got into building for.",
       },
       {
-        title: "Clients left in the dark create friction",
-        body: "Without regular updates, clients chase you for status — every unanswered check-in call is time you don't get back.",
+        title: "Silence makes clients nervous",
+        body: "No update means a phone call. Every one of those is a PM pulled off site to say 'yeah, still on track.'",
       },
     ],
     workflows: [
@@ -47,7 +48,7 @@ export const industries = [
         tag: "Enquiry capture",
         title: "Project enquiry chatbot",
         description:
-          "Captures scope, budget, location, and timeline from your website or a phone call. Filters speculative enquiries and sends qualified leads to you with a full brief.",
+          "Captures scope, budget, location, and timeline from your website or a phone call. Filters out the tyre-kickers and sends you qualified leads with a full brief attached.",
         steps: [
           { label: "Website enquiry", icon: IconMessage },
           { label: "AI captures details", icon: IconDocument },
@@ -59,7 +60,7 @@ export const industries = [
         tag: "Document follow-up",
         title: "Tender & document processing",
         description:
-          "AI reads incoming documents, extracts key details, flags anything missing or ambiguous, and puts together a structured summary — instead of you reading it line by line.",
+          "AI reads incoming documents, pulls out the key details, flags anything missing or unclear, and hands you a summary — instead of you reading it line by line at 9pm.",
         steps: [
           { label: "Document received", icon: IconDocument },
           { label: "AI reads it", icon: IconMessage },
@@ -71,7 +72,7 @@ export const industries = [
         tag: "Client updates",
         title: "Milestone update automation",
         description:
-          "As each project milestone is reached, an automatic update goes to the client — reducing the check-in calls that interrupt your day.",
+          "Slab poured, frame up, lock-up — each milestone triggers an automatic update to the client, so they hear it from you before they think to ask.",
         steps: [
           { label: "Milestone reached", icon: IconFlag },
           { label: "Update drafted", icon: IconDocument },
@@ -83,7 +84,7 @@ export const industries = [
         tag: "Payment follow-up",
         title: "Quote & invoice follow-up",
         description:
-          "Quotes and invoices get automatic, polite follow-ups on a set schedule — so chasing payment doesn't fall on you to remember.",
+          "Quotes and invoices get polite, automatic follow-ups on a set schedule, so chasing payment isn't one more thing you have to remember to do.",
         steps: [
           { label: "Quote sent", icon: IconMail },
           { label: "Day 3 reminder", icon: IconBell },
@@ -95,8 +96,8 @@ export const industries = [
     toolsExamples: ["Xero", "MYOB", "Outlook Calendar", "Google Calendar", "Gmail"],
     whyNow: {
       paragraphs: [
-        "Australian construction businesses face a real tension: they're often too busy to respond to enquiries quickly, and slow response is one of the most common reasons builders lose work to a competitor who replied first.",
-        "Document handling is where a lot of hidden time goes — reading RFQs, chasing missing information, drafting follow-ups. These are repetitive, systematic tasks, not judgment calls. Automating them doesn't replace your PMs; it gives them back time for the work that actually needs their expertise.",
+        "Builders aren't losing work because the quote was wrong — they're losing it because someone else replied first. Speed of response has quietly become one of the biggest edges a small building business can have, and it's the easiest one to fix.",
+        "None of the admin — reading RFQs, chasing a signature, sending a status update — actually needs a PM's judgement. It needs someone (or something) to do it promptly and consistently. Handing that off doesn't replace your PMs; it gets them back on site.",
       ],
     },
   },
