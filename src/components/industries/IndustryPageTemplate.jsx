@@ -122,8 +122,7 @@ export default function IndustryPageTemplate({ industry }) {
             Built for {name.toLowerCase()}, not off the shelf
           </h2>
           <p className="mt-4 text-slate-400">
-            Every system is custom-built for your business — these are examples of the kind
-            of automation that's possible.
+            Every system is custom-built. Here's what's possible.
           </p>
         </Reveal>
         <div className="relative mx-auto mt-14 grid max-w-5xl gap-5 md:grid-cols-2">
@@ -144,8 +143,7 @@ export default function IndustryPageTemplate({ industry }) {
               Built to connect with what you already use
             </h2>
             <p className="mt-4 text-slate-400">
-              ARS is built around your existing setup — no forced migration. A few tools we
-              commonly connect to:
+              Built around what you already use. A few examples:
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               {toolsExamples.map((t) => (

@@ -29,20 +29,20 @@ export const industries = [
     headlineAccent: "Construction Companies",
     subheadline: "Answer every enquiry, chase every invoice, without adding admin.",
     intro:
-      "You're on site, not by a screen — but the enquiry still needs a reply, the RFQ still needs reading, and the client still wants an update. ARS builds AI systems for builders in Brisbane and across Australia that handle all of it, so your team stays focused on the build, not the inbox.",
+      "You're on site, not by a screen. ARS builds AI systems that answer enquiries, read the paperwork, and keep clients updated — so you can stay on the build.",
     typicalTimeline: "Typically 2–4 weeks to go live",
     challenges: [
       {
         title: "A missed call is a missed tender",
-        body: "The builder who replies to a project enquiry within minutes usually wins it. The one who replies from the ute after knock-off usually doesn't.",
+        body: "Reply in minutes and you usually win the job. Reply from the ute after knock-off and you usually don't.",
       },
       {
         title: "Paperwork eats the hours you don't have",
-        body: "Reading RFQs, chasing missing details, drafting follow-ups — it's real work, but it's not the work you actually got into building for.",
+        body: "Reading RFQs, chasing details, drafting follow-ups — real work, but not the work you got into building for.",
       },
       {
         title: "Silence makes clients nervous",
-        body: "No update means a phone call. Every one of those is a PM pulled off site to say 'yeah, still on track.'",
+        body: "No update means a phone call — a PM pulled off site just to say 'yeah, still on track.'",
       },
     ],
     workflows: [
@@ -50,7 +50,7 @@ export const industries = [
         tag: "Enquiry capture",
         title: "Project enquiry chatbot",
         description:
-          "Captures scope, budget, location, and timeline from your website or a phone call. Filters out the tyre-kickers and sends you qualified leads with a full brief attached.",
+          "Captures scope, budget, and timeline from your website or a call, filters out the tyre-kickers, and sends you a qualified lead.",
         steps: [
           { label: "Website enquiry", icon: IconMessage },
           { label: "AI captures details", icon: IconDocument },
@@ -62,7 +62,7 @@ export const industries = [
         tag: "Document follow-up",
         title: "Tender & document processing",
         description:
-          "AI reads incoming documents, pulls out the key details, flags anything missing or unclear, and hands you a summary — instead of you reading it line by line at 9pm.",
+          "AI reads incoming documents, flags anything missing, and hands you a summary — no more reading it line by line at 9pm.",
         steps: [
           { label: "Document received", icon: IconDocument },
           { label: "AI reads it", icon: IconMessage },
@@ -74,7 +74,7 @@ export const industries = [
         tag: "Variations",
         title: "Variation documentation",
         description:
-          "A variation comes up on site, the AI drafts the notice, sends it for the client's approval, and logs the decision against the contract value automatically.",
+          "A variation comes up, the AI drafts the notice, sends it for approval, and logs the outcome.",
         steps: [
           { label: "Variation identified", icon: IconEdit },
           { label: "Notice drafted", icon: IconDocument },
@@ -86,7 +86,7 @@ export const industries = [
         tag: "Client updates",
         title: "Milestone update automation",
         description:
-          "Slab poured, frame up, lock-up — each milestone triggers an automatic update to the client, so they hear it from you before they think to ask.",
+          "Slab poured, frame up, lock-up — each milestone sends the client an update before they think to ask.",
         steps: [
           { label: "Milestone reached", icon: IconFlag },
           { label: "Update drafted", icon: IconDocument },
@@ -98,7 +98,7 @@ export const industries = [
         tag: "Subcontractors",
         title: "Subcontractor coordination",
         description:
-          "Scope goes out, confirmations come back, and it's all logged automatically — instead of your PM playing phone tag chasing a reply.",
+          "Scope goes out, confirmations come back, all logged automatically — no more phone tag.",
         steps: [
           { label: "Scope sent", icon: IconUsers },
           { label: "Briefing sent", icon: IconSend },
@@ -110,7 +110,7 @@ export const industries = [
         tag: "Payment follow-up",
         title: "Quote & invoice follow-up",
         description:
-          "Quotes and invoices get polite, automatic follow-ups on a set schedule, so chasing payment isn't one more thing you have to remember to do.",
+          "Quotes and invoices get automatic follow-ups on a set schedule — one less thing to remember.",
         steps: [
           { label: "Quote sent", icon: IconMail },
           { label: "Day 3 reminder", icon: IconBell },
@@ -122,8 +122,8 @@ export const industries = [
     toolsExamples: ["Xero", "MYOB", "Outlook Calendar", "Google Calendar", "Gmail"],
     whyNow: {
       paragraphs: [
-        "Builders aren't losing work because the quote was wrong — they're losing it because someone else replied first. Speed of response has quietly become one of the biggest edges a small building business can have, and it's the easiest one to fix.",
-        "None of the admin — reading RFQs, chasing a signature, sending a status update — actually needs a PM's judgement. It needs someone (or something) to do it promptly and consistently. Handing that off doesn't replace your PMs; it gets them back on site.",
+        "Builders rarely lose work on price. They lose it because someone else replied first — and that's the easiest edge to fix.",
+        "Reading RFQs, chasing signatures, sending updates — none of it needs a PM's judgement, just consistency. Handing it off doesn't replace your PMs. It gets them back on site.",
       ],
     },
   },
