@@ -128,7 +128,7 @@ export default function IndustryPageTemplate({ industry }) {
         <div className="relative mx-auto mt-14 grid max-w-5xl gap-5 md:grid-cols-2">
           {workflows.map((w, i) => (
             <Reveal key={w.title} delay={i * 0.08}>
-              <WorkflowCard {...w} />
+              <WorkflowCard {...w} glow={i % 2 === 0 ? "teal" : "blue"} />
             </Reveal>
           ))}
         </div>

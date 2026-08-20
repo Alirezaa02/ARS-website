@@ -74,7 +74,7 @@ export const industries = [
         steps: [
           { label: "Document received", icon: IconDocument },
           { label: "AI reads it", icon: IconMessage },
-          { label: "Flags gaps", icon: IconAlert },
+          { label: "Flags gaps", icon: IconAlert, tone: "warn" },
           { label: "Summary sent", icon: IconSend },
         ],
       },
@@ -131,7 +131,7 @@ export const industries = [
           { label: "Quote sent", icon: IconMail },
           { label: "Day 3 reminder", icon: IconBell },
           { label: "Day 7 follow-up", icon: IconBell },
-          { label: "Escalated if needed", icon: IconAlert },
+          { label: "Escalated if needed", icon: IconAlert, tone: "warn" },
         ],
       },
     ],
@@ -350,10 +350,10 @@ export const industries = [
         details:
           "Keeps the tone professional throughout, so the relationship's still intact by the time you do need to step in.",
         steps: [
-          { label: "Invoice overdue", icon: IconAlert },
+          { label: "Invoice overdue", icon: IconAlert, tone: "warn" },
           { label: "Day 1 reminder", icon: IconMessage },
           { label: "Day 3 follow-up", icon: IconMail },
-          { label: "Escalated to you", icon: IconBell },
+          { label: "Escalated to you", icon: IconBell, tone: "warn" },
         ],
       },
       {
@@ -365,7 +365,7 @@ export const industries = [
           "You only get woken up for the ones that actually need you at 2am — everything else waits for a normal hour.",
         steps: [
           { label: "Call comes in", icon: IconPhone },
-          { label: "AI assesses urgency", icon: IconAlert },
+          { label: "AI assesses urgency", icon: IconAlert, tone: "warn" },
           { label: "Triaged", icon: IconCheck },
           { label: "Handled", icon: IconCalendar },
         ],

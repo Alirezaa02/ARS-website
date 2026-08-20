@@ -1,19 +1,25 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-function StepIcon({ icon }) {
+const TONE_STYLES = {
+  teal: { icon: "border-accent/20 bg-accent/10 text-accent", bar: "via-accent" },
+  blue: { icon: "border-accent-blue/20 bg-accent-blue/10 text-accent-blue", bar: "via-accent-blue" },
+  warn: { icon: "border-amber-400/20 bg-amber-400/10 text-amber-400", bar: "via-amber-400" },
+};
+
+function StepIcon({ icon, tone }) {
   return (
-    <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-accent/20 bg-accent/10 text-accent">
+    <div className={`grid h-11 w-11 shrink-0 place-items-center rounded-xl border ${TONE_STYLES[tone].icon}`}>
       {icon}
     </div>
   );
 }
 
-function Connector({ delay = 0 }) {
+function Connector({ tone, delay = 0 }) {
   return (
     <div className="relative mx-1 h-px flex-1 overflow-hidden bg-white/10 sm:mx-2">
       <motion.div
-        className="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-transparent via-accent to-transparent"
+        className={`absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-transparent ${TONE_STYLES[tone].bar} to-transparent`}
         initial={{ x: "-100%" }}
         whileInView={{ x: "300%" }}
         viewport={{ once: false }}
@@ -23,12 +29,18 @@ function Connector({ delay = 0 }) {
   );
 }
 
-export function WorkflowCard({ tag, title, description, details, steps }) {
+// Alternates teal/blue for rhythm; a step can override with tone: "warn" for anything urgent/attention-worthy.
+function toneFor(step, i) {
+  return step.tone || (i % 2 === 0 ? "teal" : "blue");
+}
+
+export function WorkflowCard({ tag, title, description, details, steps, glow = "teal" }) {
   const [open, setOpen] = useState(false);
+  const glowClass = glow === "blue" ? "bg-accent-blue/10" : "bg-accent/10";
 
   return (
     <div className="glass glass-hover relative overflow-hidden rounded-2xl p-6 md:p-7">
-      <div className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-accent/10 blur-2xl" />
+      <div className={`pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full ${glowClass} blur-2xl`} />
       <div className="relative">
         <div className="flex items-center justify-between">
           <span className="font-mono text-xs uppercase tracking-widest text-accent">{tag}</span>
@@ -39,10 +51,10 @@ export function WorkflowCard({ tag, title, description, details, steps }) {
           {steps.map((step, i) => (
             <div key={step.label} className="flex flex-1 items-center last:flex-none">
               <div className="flex flex-col items-center gap-2 text-center">
-                <StepIcon icon={step.icon} />
+                <StepIcon icon={step.icon} tone={toneFor(step, i)} />
                 <span className="max-w-[80px] text-xs leading-tight text-slate-400">{step.label}</span>
               </div>
-              {i < steps.length - 1 && <Connector delay={i * 0.15} />}
+              {i < steps.length - 1 && <Connector tone={toneFor(steps[i + 1], i + 1)} delay={i * 0.15} />}
             </div>
           ))}
         </div>
