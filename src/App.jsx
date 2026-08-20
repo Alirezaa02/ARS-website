@@ -17,6 +17,7 @@ import AiAnsweringServiceCostAustralia from "./pages/blog/AiAnsweringServiceCost
 import Industries from "./pages/Industries";
 import Construction from "./pages/industries/Construction";
 import Electrical from "./pages/industries/Electrical";
+import Plumbing from "./pages/industries/Plumbing";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -74,6 +75,7 @@ export default function App() {
           <Route path="/industries" element={<Page><Industries /></Page>} />
           <Route path="/industries/construction" element={<Page><Construction /></Page>} />
           <Route path="/industries/electrical" element={<Page><Electrical /></Page>} />
+          <Route path="/industries/plumbing" element={<Page><Plumbing /></Page>} />
           <Route path="/privacy" element={<Page><Privacy /></Page>} />
           <Route path="/terms" element={<Page><Terms /></Page>} />
           <Route path="*" element={<Page><NotFound /></Page>} />

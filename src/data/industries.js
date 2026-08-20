@@ -261,6 +261,124 @@ export const industries = [
       ],
     },
   },
+  {
+    slug: "plumbing",
+    category: "Trades",
+    name: "Plumbing",
+    headline: "AI for Plumbers in Australia",
+    headlineAccent: "Plumbers",
+    subheadline: "Answer every call — burst pipe at 2am or not.",
+    intro:
+      "Emergencies don't wait for business hours. ARS builds AI systems that answer every call, work out what's urgent, and get routine jobs booked — without you picking up at 2am.",
+    typicalTimeline: "Typically 2–4 weeks to go live",
+    challenges: [
+      {
+        title: "A burst pipe won't wait",
+        body: "Emergency jobs go to whoever answers first. Miss the call, and it's already booked with someone else.",
+      },
+      {
+        title: "Quote questions eat your evenings",
+        body: "\"How much to fix a blocked drain?\" — you've answered it a hundred times, and it's still eating into your night.",
+      },
+      {
+        title: "Invoices don't chase themselves",
+        body: "Every unpaid invoice is time you spend chasing instead of on the tools.",
+      },
+    ],
+    workflows: [
+      {
+        tag: "Call answering",
+        title: "24/7 AI call answering",
+        description:
+          "Every call gets answered straight away, day or night. AI captures job type and address, then books it into your calendar.",
+        details:
+          "Works the same at 2am as it does at 2pm. If it's urgent, you'll know before you even open the message.",
+        steps: [
+          { label: "Phone rings", icon: IconPhone },
+          { label: "AI answers", icon: IconMessage },
+          { label: "Job captured", icon: IconDocument },
+          { label: "Booked in", icon: IconCalendar },
+        ],
+      },
+      {
+        tag: "Quote chatbot",
+        title: "Website quote chatbot",
+        description:
+          "Handles \"how much to fix...\" questions on your website, asks the right follow-ups, and sends you a qualified lead.",
+        details:
+          "Filters out the just-browsing enquiries, so you're not quoting jobs that were never going to happen.",
+        steps: [
+          { label: "Chat opens", icon: IconMessage },
+          { label: "AI asks questions", icon: IconDocument },
+          { label: "Lead captured", icon: IconCheck },
+          { label: "Sent to you", icon: IconSend },
+        ],
+      },
+      {
+        tag: "Quote follow-up",
+        title: "Automated quote follow-up",
+        description:
+          "Quote sent, then a follow-up sequence runs on its own until the customer books or declines — no hot lead left to go cold.",
+        details:
+          "Stops the moment they respond either way. Never an awkward reminder after they've already said yes.",
+        steps: [
+          { label: "Quote sent", icon: IconMail },
+          { label: "SMS reminder", icon: IconBell },
+          { label: "Follow-up sent", icon: IconSend },
+          { label: "Customer books", icon: IconCheck },
+        ],
+      },
+      {
+        tag: "Reviews",
+        title: "Review request on completion",
+        description:
+          "Job marked done, and the customer gets a text asking for a review while the job's still fresh in their mind.",
+        details:
+          "Timed right after the job, not days later once they've already forgotten how good the work was.",
+        steps: [
+          { label: "Job complete", icon: IconCheck },
+          { label: "SMS sent", icon: IconMessage },
+          { label: "Link tapped", icon: IconSend },
+          { label: "Review posted", icon: IconStar },
+        ],
+      },
+      {
+        tag: "Payment follow-up",
+        title: "Invoice & payment reminders",
+        description:
+          "Overdue invoices get a polite, automatic reminder sequence before it ever needs a personal phone call from you.",
+        details:
+          "Keeps the tone professional throughout, so the relationship's still intact by the time you do need to step in.",
+        steps: [
+          { label: "Invoice overdue", icon: IconAlert },
+          { label: "Day 1 reminder", icon: IconMessage },
+          { label: "Day 3 follow-up", icon: IconMail },
+          { label: "Escalated to you", icon: IconBell },
+        ],
+      },
+      {
+        tag: "Emergency triage",
+        title: "Emergency call triage",
+        description:
+          "After-hours calls get triaged for urgency. Genuine emergencies go straight to you; routine jobs get booked for the next slot.",
+        details:
+          "You only get woken up for the ones that actually need you at 2am — everything else waits for a normal hour.",
+        steps: [
+          { label: "Call comes in", icon: IconPhone },
+          { label: "AI assesses urgency", icon: IconAlert },
+          { label: "Triaged", icon: IconCheck },
+          { label: "Handled", icon: IconCalendar },
+        ],
+      },
+    ],
+    toolsExamples: ["Xero", "MYOB", "Outlook Calendar", "Google Calendar", "Gmail"],
+    whyNow: {
+      paragraphs: [
+        "Plumbing has more genuine emergencies than most trades — burst pipes and blocked drains don't wait for business hours. Whoever answers first usually gets the job.",
+        "Quote questions, review requests, invoice chasing — none of it needs your trade skills, just consistency. Handing it off means fewer interruptions on the jobs that do.",
+      ],
+    },
+  },
 ];
 
 export function getIndustry(slug) {
