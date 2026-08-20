@@ -42,3 +42,9 @@ export const IconEdit = (
 export const IconUsers = (
   <svg {...common}><circle cx="9" cy="8" r="3" /><path d="M2 20a7 7 0 0 1 14 0" /><path d="M16 4.5a3 3 0 0 1 0 6" /><path d="M21 20a6.5 6.5 0 0 0-4.5-6.2" /></svg>
 );
+export const IconPhone = (
+  <svg {...common}><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" /></svg>
+);
+export const IconStar = (
+  <svg {...common}><path d="m12 3 2.7 5.9 6.3.7-4.7 4.4 1.3 6.3L12 17.3 6.4 20.3l1.3-6.3-4.7-4.4 6.3-.7Z" /></svg>
+);

@@ -10,6 +10,10 @@ import {
   IconAlert,
   IconEdit,
   IconUsers,
+  IconPhone,
+  IconStar,
+  IconClock,
+  IconCalendar,
 } from "../components/industries/icons";
 
 export const howItWorks = [
@@ -124,6 +128,112 @@ export const industries = [
       paragraphs: [
         "Builders rarely lose work on price. They lose it because someone else replied first — and that's the easiest edge to fix.",
         "Reading RFQs, chasing signatures, sending updates — none of it needs a PM's judgement, just consistency. Handing it off doesn't replace your PMs. It gets them back on site.",
+      ],
+    },
+  },
+  {
+    slug: "electrical",
+    category: "Trades",
+    name: "Electrical",
+    headline: "AI for Electrical Contractors in Australia",
+    headlineAccent: "Electrical Contractors",
+    subheadline: "Answer every call, even the ones that come in mid-job.",
+    intro:
+      "You can't answer the phone with both hands in a switchboard. ARS builds AI systems that answer every call, qualify the job, and get it booked in — without you touching your phone.",
+    typicalTimeline: "Typically 2–4 weeks to go live",
+    challenges: [
+      {
+        title: "A missed call is a missed callout",
+        body: "Half the jobs that call an electrician are urgent. If you don't pick up, they just call the next one on the list.",
+      },
+      {
+        title: "The same questions, over and over",
+        body: "\"Do I need a licensed sparky for this?\" — you've answered it a hundred times, and it's still eating your day.",
+      },
+      {
+        title: "Solar and EV enquiries go cold fast",
+        body: "High-value jobs, but slow to quote loses them. Whoever qualifies the lead first usually gets the install.",
+      },
+    ],
+    workflows: [
+      {
+        tag: "Call answering",
+        title: "24/7 AI call answering",
+        description:
+          "Every call gets answered, even mid-job. AI captures job type, location, and urgency, then books it in or flags your team.",
+        steps: [
+          { label: "Call comes in", icon: IconPhone },
+          { label: "AI answers", icon: IconMessage },
+          { label: "Job captured", icon: IconDocument },
+          { label: "Booked in", icon: IconCalendar },
+        ],
+      },
+      {
+        tag: "Compliance FAQ",
+        title: "Compliance & safety chatbot",
+        description:
+          "Handles the \"do I need a licensed electrician for this\" questions on its own, and turns the real leads into booked site visits.",
+        steps: [
+          { label: "Question asked", icon: IconMessage },
+          { label: "AI answers", icon: IconCheck },
+          { label: "Qualified as lead", icon: IconDocument },
+          { label: "Visit booked", icon: IconCalendar },
+        ],
+      },
+      {
+        tag: "Solar & EV",
+        title: "Solar & EV charger enquiry bot",
+        description:
+          "Asks the right questions upfront — roof type, budget, target size — and books a site assessment straight into your calendar.",
+        steps: [
+          { label: "Enquiry in", icon: IconMessage },
+          { label: "AI qualifies", icon: IconDocument },
+          { label: "Assessment booked", icon: IconCalendar },
+          { label: "You're briefed", icon: IconPerson },
+        ],
+      },
+      {
+        tag: "Quote follow-up",
+        title: "Automated quote follow-up",
+        description:
+          "Quote sent, then a follow-up sequence runs on its own until the customer accepts — nobody forgotten because you got busy.",
+        steps: [
+          { label: "Quote sent", icon: IconMail },
+          { label: "SMS reminder", icon: IconBell },
+          { label: "Follow-up sent", icon: IconSend },
+          { label: "Accepted", icon: IconCheck },
+        ],
+      },
+      {
+        tag: "Inspections",
+        title: "Inspection & testing reminders",
+        description:
+          "Switchboard checks and safety inspections fall due automatically, and the customer books their own slot without you tracking a spreadsheet.",
+        steps: [
+          { label: "Due date hits", icon: IconClock },
+          { label: "Reminder sent", icon: IconBell },
+          { label: "Customer books", icon: IconCalendar },
+          { label: "Job created", icon: IconCheck },
+        ],
+      },
+      {
+        tag: "Reviews & referrals",
+        title: "After-job review & referral requests",
+        description:
+          "Job marked complete, and the customer gets asked for a review and a referral automatically — two things you'd usually forget to chase.",
+        steps: [
+          { label: "Job complete", icon: IconCheck },
+          { label: "Review asked", icon: IconMessage },
+          { label: "Review posted", icon: IconStar },
+          { label: "Referral captured", icon: IconUsers },
+        ],
+      },
+    ],
+    toolsExamples: ["Xero", "MYOB", "Outlook Calendar", "Google Calendar", "Gmail"],
+    whyNow: {
+      paragraphs: [
+        "Electrical is an emergency-adjacent trade — a lot of enquiries are urgent, and urgent customers don't wait around. Whoever answers first usually gets the job.",
+        "Compliance questions, quote chasing, review requests — none of it needs your licence, just someone consistent to handle it. That's exactly what this replaces.",
       ],
     },
   },
