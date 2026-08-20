@@ -8,6 +8,8 @@ import {
   IconMail,
   IconSend,
   IconAlert,
+  IconEdit,
+  IconUsers,
 } from "../components/industries/icons";
 
 export const howItWorks = [
@@ -69,6 +71,18 @@ export const industries = [
         ],
       },
       {
+        tag: "Variations",
+        title: "Variation documentation",
+        description:
+          "A variation comes up on site, the AI drafts the notice, sends it for the client's approval, and logs the decision against the contract value automatically.",
+        steps: [
+          { label: "Variation identified", icon: IconEdit },
+          { label: "Notice drafted", icon: IconDocument },
+          { label: "Sent for approval", icon: IconSend },
+          { label: "Logged", icon: IconCheck },
+        ],
+      },
+      {
         tag: "Client updates",
         title: "Milestone update automation",
         description:
@@ -78,6 +92,18 @@ export const industries = [
           { label: "Update drafted", icon: IconDocument },
           { label: "Sent to client", icon: IconSend },
           { label: "Logged", icon: IconCheck },
+        ],
+      },
+      {
+        tag: "Subcontractors",
+        title: "Subcontractor coordination",
+        description:
+          "Scope goes out, confirmations come back, and it's all logged automatically — instead of your PM playing phone tag chasing a reply.",
+        steps: [
+          { label: "Scope sent", icon: IconUsers },
+          { label: "Briefing sent", icon: IconSend },
+          { label: "Confirmed", icon: IconCheck },
+          { label: "Logged", icon: IconDocument },
         ],
       },
       {

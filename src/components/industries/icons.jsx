@@ -36,3 +36,9 @@ export const IconSend = (
 export const IconDollar = (
   <svg {...common}><path d="M12 2v20" /><path d="M17 7a4 4 0 0 0-4-3H10a3.5 3.5 0 0 0 0 7h4a3.5 3.5 0 0 1 0 7h-3a4 4 0 0 1-4-3" /></svg>
 );
+export const IconEdit = (
+  <svg {...common}><path d="M12 20h9" /><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" /></svg>
+);
+export const IconUsers = (
+  <svg {...common}><circle cx="9" cy="8" r="3" /><path d="M2 20a7 7 0 0 1 14 0" /><path d="M16 4.5a3 3 0 0 1 0 6" /><path d="M21 20a6.5 6.5 0 0 0-4.5-6.2" /></svg>
+);
