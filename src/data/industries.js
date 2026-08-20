@@ -55,6 +55,8 @@ export const industries = [
         title: "Project enquiry chatbot",
         description:
           "Captures scope, budget, and timeline from your website or a call, filters out the tyre-kickers, and sends you a qualified lead.",
+        details:
+          "Works the same whether someone fills in a form at midnight or calls while you're on site. If a detail's missing, it asks — you never get a lead you can't act on.",
         steps: [
           { label: "Website enquiry", icon: IconMessage },
           { label: "AI captures details", icon: IconDocument },
@@ -67,6 +69,8 @@ export const industries = [
         title: "Tender & document processing",
         description:
           "AI reads incoming documents, flags anything missing, and hands you a summary — no more reading it line by line at 9pm.",
+        details:
+          "Handles PDFs, scanned documents, even messy email attachments. If something's ambiguous, it flags it clearly instead of guessing.",
         steps: [
           { label: "Document received", icon: IconDocument },
           { label: "AI reads it", icon: IconMessage },
@@ -79,6 +83,8 @@ export const industries = [
         title: "Variation documentation",
         description:
           "A variation comes up, the AI drafts the notice, sends it for approval, and logs the outcome.",
+        details:
+          "Keeps a paper trail automatically, so if a client questions a cost later, the approval's already on record.",
         steps: [
           { label: "Variation identified", icon: IconEdit },
           { label: "Notice drafted", icon: IconDocument },
@@ -91,6 +97,8 @@ export const industries = [
         title: "Milestone update automation",
         description:
           "Slab poured, frame up, lock-up — each milestone sends the client an update before they think to ask.",
+        details:
+          "You choose the milestones that matter — slab, frame, lock-up, handover — and set the message once. After that it just runs.",
         steps: [
           { label: "Milestone reached", icon: IconFlag },
           { label: "Update drafted", icon: IconDocument },
@@ -103,6 +111,8 @@ export const industries = [
         title: "Subcontractor coordination",
         description:
           "Scope goes out, confirmations come back, all logged automatically — no more phone tag.",
+        details:
+          "Works over SMS or email, whichever your subbies actually respond to. Confirmations get logged against the job automatically.",
         steps: [
           { label: "Scope sent", icon: IconUsers },
           { label: "Briefing sent", icon: IconSend },
@@ -115,6 +125,8 @@ export const industries = [
         title: "Quote & invoice follow-up",
         description:
           "Quotes and invoices get automatic follow-ups on a set schedule — one less thing to remember.",
+        details:
+          "The tone stays professional and consistent — never a chase that feels awkward. You can see exactly where every quote sits at a glance.",
         steps: [
           { label: "Quote sent", icon: IconMail },
           { label: "Day 3 reminder", icon: IconBell },
@@ -161,6 +173,8 @@ export const industries = [
         title: "24/7 AI call answering",
         description:
           "Every call gets answered, even mid-job. AI captures job type, location, and urgency, then books it in or flags your team.",
+        details:
+          "Works after hours and on weekends too, not just during the day. Urgent jobs get flagged so you know what to call back first.",
         steps: [
           { label: "Call comes in", icon: IconPhone },
           { label: "AI answers", icon: IconMessage },
@@ -173,6 +187,8 @@ export const industries = [
         title: "Compliance & safety chatbot",
         description:
           "Handles the \"do I need a licensed electrician for this\" questions on its own, and turns the real leads into booked site visits.",
+        details:
+          "Trained on the kinds of questions your customers actually ask, not generic disclaimers. Real jobs still get a proper site visit booked.",
         steps: [
           { label: "Question asked", icon: IconMessage },
           { label: "AI answers", icon: IconCheck },
@@ -185,6 +201,8 @@ export const industries = [
         title: "Solar & EV charger enquiry bot",
         description:
           "Asks the right questions upfront — roof type, budget, target size — and books a site assessment straight into your calendar.",
+        details:
+          "Filters out the enquiries that are months away from being real, so your estimator's time goes to the ones ready to move.",
         steps: [
           { label: "Enquiry in", icon: IconMessage },
           { label: "AI qualifies", icon: IconDocument },
@@ -197,6 +215,8 @@ export const industries = [
         title: "Automated quote follow-up",
         description:
           "Quote sent, then a follow-up sequence runs on its own until the customer accepts — nobody forgotten because you got busy.",
+        details:
+          "Stops automatically the moment the customer responds either way — no awkward reminders after they've already said yes or no.",
         steps: [
           { label: "Quote sent", icon: IconMail },
           { label: "SMS reminder", icon: IconBell },
@@ -209,6 +229,8 @@ export const industries = [
         title: "Inspection & testing reminders",
         description:
           "Switchboard checks and safety inspections fall due automatically, and the customer books their own slot without you tracking a spreadsheet.",
+        details:
+          "Pulls from the original job date, so nothing depends on you remembering to set a reminder twelve months later.",
         steps: [
           { label: "Due date hits", icon: IconClock },
           { label: "Reminder sent", icon: IconBell },
@@ -221,6 +243,8 @@ export const industries = [
         title: "After-job review & referral requests",
         description:
           "Job marked complete, and the customer gets asked for a review and a referral automatically — two things you'd usually forget to chase.",
+        details:
+          "Timed to go out once the job's actually wrapped up and the customer's happy — not the moment the invoice is paid.",
         steps: [
           { label: "Job complete", icon: IconCheck },
           { label: "Review asked", icon: IconMessage },
