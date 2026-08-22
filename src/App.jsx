@@ -18,6 +18,7 @@ import Industries from "./pages/Industries";
 import Construction from "./pages/industries/Construction";
 import Electrical from "./pages/industries/Electrical";
 import Plumbing from "./pages/industries/Plumbing";
+import AirConditioning from "./pages/industries/AirConditioning";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -76,6 +77,7 @@ export default function App() {
           <Route path="/industries/construction" element={<Page><Construction /></Page>} />
           <Route path="/industries/electrical" element={<Page><Electrical /></Page>} />
           <Route path="/industries/plumbing" element={<Page><Plumbing /></Page>} />
+          <Route path="/industries/air-conditioning" element={<Page><AirConditioning /></Page>} />
           <Route path="/privacy" element={<Page><Privacy /></Page>} />
           <Route path="/terms" element={<Page><Terms /></Page>} />
           <Route path="*" element={<Page><NotFound /></Page>} />

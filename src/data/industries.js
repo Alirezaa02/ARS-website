@@ -14,6 +14,7 @@ import {
   IconStar,
   IconClock,
   IconCalendar,
+  IconDollar,
 } from "../components/industries/icons";
 
 export const howItWorks = [
@@ -376,6 +377,124 @@ export const industries = [
       paragraphs: [
         "Plumbing has more genuine emergencies than most trades — burst pipes and blocked drains don't wait for business hours. Whoever answers first usually gets the job.",
         "Quote questions, review requests, invoice chasing — none of it needs your trade skills, just consistency. Handing it off means fewer interruptions on the jobs that do.",
+      ],
+    },
+  },
+  {
+    slug: "air-conditioning",
+    category: "Trades",
+    name: "Air Conditioning",
+    headline: "AI for HVAC & Air Conditioning Businesses in Australia",
+    headlineAccent: "Air Conditioning Businesses",
+    subheadline: "Handle the summer surge without missing a single call.",
+    intro:
+      "When temperatures spike, enquiries triple. ARS builds AI systems that answer every call, book every job, and keep your technicians focused on installs — not the phone.",
+    typicalTimeline: "Typically 2–4 weeks to go live",
+    challenges: [
+      {
+        title: "Peak season overwhelms the phones",
+        body: "You can't hire enough staff for the summer rush. Every missed call in peak season is a job that just went to someone else.",
+      },
+      {
+        title: "Maintenance revenue quietly disappears",
+        body: "Units installed years ago need servicing, but nobody's chasing it. No reminder usually means no repeat booking.",
+      },
+      {
+        title: "Ducted quotes take forever to close",
+        body: "Site visits, measurements, back-and-forth — by the time you've quoted, the customer's gone with whoever was faster.",
+      },
+    ],
+    workflows: [
+      {
+        tag: "Call overflow",
+        title: "Peak-season call overflow",
+        description:
+          "Handles a flood of calls at once, no hold music and nothing missed — exactly when you need it most.",
+        details:
+          "Scales the same whether it's 3 calls or 30. Nobody waits on hold, and nothing falls through during your busiest week of the year.",
+        steps: [
+          { label: "Calls come in", icon: IconPhone },
+          { label: "AI answers all", icon: IconMessage },
+          { label: "Booked in", icon: IconCalendar },
+          { label: "None missed", icon: IconCheck },
+        ],
+      },
+      {
+        tag: "Ducted enquiries",
+        title: "Ducted system enquiry chatbot",
+        description:
+          "Asks about home size, current system, and budget on your website, then books a site assessment — so you arrive pre-qualified, not cold.",
+        details:
+          "Filters out the people just comparison shopping, so your time goes to enquiries that are actually ready to install.",
+        steps: [
+          { label: "Enquiry in", icon: IconMessage },
+          { label: "AI qualifies", icon: IconDocument },
+          { label: "Assessment booked", icon: IconCalendar },
+          { label: "You're briefed", icon: IconPerson },
+        ],
+      },
+      {
+        tag: "Maintenance",
+        title: "Annual maintenance reminders",
+        description:
+          "Sends a reminder at the 12-month mark automatically, and books the service before the customer thinks about calling someone else.",
+        details:
+          "Runs in the background with zero effort from you — repeat business that would otherwise just quietly stop.",
+        steps: [
+          { label: "Install date stored", icon: IconDocument },
+          { label: "12 months on", icon: IconClock },
+          { label: "Reminder sent", icon: IconBell },
+          { label: "Service booked", icon: IconCalendar },
+        ],
+      },
+      {
+        tag: "Warranty",
+        title: "Warranty registration & scheduling",
+        description:
+          "Registers the warranty and books the first service automatically the moment an install's marked complete.",
+        details:
+          "One less form for your team to remember, and the customer's already covered before they even ask.",
+        steps: [
+          { label: "Install complete", icon: IconCheck },
+          { label: "Warranty registered", icon: IconDocument },
+          { label: "Confirmation sent", icon: IconMail },
+          { label: "Service scheduled", icon: IconCalendar },
+        ],
+      },
+      {
+        tag: "Emergency triage",
+        title: "Emergency breakdown triage",
+        description:
+          "After-hours breakdowns get triaged for urgency — genuine emergencies go to your on-call tech, routine ones get the next slot.",
+        details:
+          "You only get called out at midnight for the ones that actually can't wait until morning.",
+        steps: [
+          { label: "Call comes in", icon: IconPhone },
+          { label: "AI assesses", icon: IconAlert, tone: "warn" },
+          { label: "Triaged", icon: IconCheck },
+          { label: "Handled", icon: IconCalendar },
+        ],
+      },
+      {
+        tag: "Finance",
+        title: "Finance enquiry handling",
+        description:
+          "Explains financing options and connects the customer straight to your finance partner, so a big purchase doesn't stall at reception.",
+        details:
+          "Keeps the conversation moving instead of leaving a finance question sitting unanswered in an inbox for days.",
+        steps: [
+          { label: "Finance question", icon: IconDollar },
+          { label: "AI explains options", icon: IconDocument },
+          { label: "Interest captured", icon: IconCheck },
+          { label: "Connected to partner", icon: IconUsers },
+        ],
+      },
+    ],
+    toolsExamples: ["Xero", "MYOB", "Outlook Calendar", "Google Calendar", "Gmail"],
+    whyNow: {
+      paragraphs: [
+        "Air conditioning is one of the most seasonal trades there is — demand triples in summer, and whoever answers the phone fastest usually wins the job.",
+        "Maintenance reminders and warranty follow-ups are pure repeat revenue that most businesses just let slip. None of it needs a technician's skill, just consistency.",
       ],
     },
   },
