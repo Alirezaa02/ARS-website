@@ -1088,6 +1088,124 @@ export const industries = [
       ],
     },
   },
+  {
+    slug: "restaurants",
+    category: "Hospitality",
+    name: "Restaurants",
+    headline: "AI for Restaurants & Cafes in Australia",
+    headlineAccent: "Restaurants & Cafes",
+    subheadline: "Take the booking, even when the floor's slammed.",
+    intro:
+      "You're running service, not sitting by a phone. ARS builds AI systems that answer every call, take the booking, and keep tables full — without pulling anyone off the floor.",
+    typicalTimeline: "Typically 2–4 weeks to go live",
+    challenges: [
+      {
+        title: "A missed call is a missed table",
+        body: "Ring during a busy service and nobody picks up, and the booking just goes to the place next door that did.",
+      },
+      {
+        title: "No-shows cost you a full sitting",
+        body: "A table held for someone who never turns up is revenue you don't get back that night.",
+      },
+      {
+        title: "Function enquiries take real time to chase",
+        body: "Date, headcount, budget, dietary needs — getting the details usually means a few messages back and forth, on top of service.",
+      },
+    ],
+    workflows: [
+      {
+        tag: "Reservations",
+        title: "24/7 AI reservation answering",
+        description:
+          "Every call gets answered, day or night. AI checks the time's actually free, takes the booking, and confirms it straight away.",
+        details:
+          "Works the same during a full dinner service as it does at 3pm on a Tuesday — nothing depends on someone being free to pick up.",
+        steps: [
+          { label: "Call comes in", icon: IconPhone },
+          { label: "AI answers", icon: IconMessage },
+          { label: "Availability checked", icon: IconCalendar },
+          { label: "Booked & confirmed", icon: IconCheck },
+        ],
+      },
+      {
+        tag: "Confirmations",
+        title: "No-show reduction reminders",
+        description:
+          "An automatic reminder goes out before every booking, with a one-tap way to confirm or cancel — so a held table doesn't just sit empty.",
+        details:
+          "Catches cancellations early enough that the table can actually be re-booked instead of written off for the night.",
+        steps: [
+          { label: "Booking made", icon: IconCalendar },
+          { label: "Reminder sent", icon: IconBell },
+          { label: "Customer confirms", icon: IconCheck },
+          { label: "Table held or released", icon: IconDocument },
+        ],
+      },
+      {
+        tag: "Functions & events",
+        title: "Function & event lead qualification",
+        description:
+          "Group and function enquiries get asked the right questions upfront — date, headcount, budget — then sent to you as a briefed, ready-to-quote lead.",
+        details:
+          "You stop chasing details over three separate messages and start every function conversation already knowing what they need.",
+        steps: [
+          { label: "Enquiry in", icon: IconMessage },
+          { label: "AI qualifies", icon: IconDocument },
+          { label: "Details captured", icon: IconCheck },
+          { label: "Sent to you", icon: IconSend },
+        ],
+      },
+      {
+        tag: "FAQ",
+        title: "Menu & enquiry chatbot",
+        description:
+          "Opening hours, dietary options, parking, and menu questions get answered automatically, so floor staff aren't pulled off tables to answer the phone.",
+        details:
+          "Handles the repeat questions on its own, and only sends through the ones that actually need a person.",
+        steps: [
+          { label: "Question asked", icon: IconMessage },
+          { label: "AI answers", icon: IconCheck },
+          { label: "Escalated if needed", icon: IconAlert, tone: "warn" },
+          { label: "Logged", icon: IconDocument },
+        ],
+      },
+      {
+        tag: "Phone orders",
+        title: "Phone order taking",
+        description:
+          "For venues that take phone orders, AI captures the order accurately and confirms it back — without tying up a staff member mid-service.",
+        details:
+          "Keeps orders consistent even during the rush, so nothing gets mis-heard over a noisy kitchen pass.",
+        steps: [
+          { label: "Call comes in", icon: IconPhone },
+          { label: "AI takes order", icon: IconMessage },
+          { label: "Order confirmed", icon: IconCheck },
+          { label: "Details sent to you", icon: IconSend },
+        ],
+      },
+      {
+        tag: "Reviews",
+        title: "Review request after the visit",
+        description:
+          "After a booking, the customer gets an automatic prompt to leave a Google review while the visit's still fresh in their mind.",
+        details:
+          "Timed right after the visit, not days later once they've forgotten how good the night was.",
+        steps: [
+          { label: "Visit complete", icon: IconCheck },
+          { label: "SMS sent", icon: IconMessage },
+          { label: "Link tapped", icon: IconSend },
+          { label: "Review posted", icon: IconStar },
+        ],
+      },
+    ],
+    toolsExamples: ["Xero", "MYOB", "Outlook Calendar", "Google Calendar", "Gmail"],
+    whyNow: {
+      paragraphs: [
+        "Restaurants live and die on speed to answer — a ringing phone during service is either a booking or a missed one, and there's rarely a spare set of hands to catch it either way.",
+        "No-shows, function enquiries, review requests — none of it needs a chef's or a manager's judgement, just consistency. Handling it automatically means more of the floor's attention stays on the table in front of them.",
+      ],
+    },
+  },
 ];
 
 export function getIndustry(slug) {
