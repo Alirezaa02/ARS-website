@@ -734,6 +734,124 @@ export const industries = [
       ],
     },
   },
+  {
+    slug: "mechanics",
+    category: "Trades",
+    name: "Mechanics",
+    headline: "AI for Auto Mechanics & Workshops in Australia",
+    headlineAccent: "Auto Mechanics & Workshops",
+    subheadline: "Book more services without leaving the workshop floor.",
+    intro:
+      "You can't answer the phone with your hands under a bonnet. ARS builds AI systems that answer every call, book the service, and chase what needs chasing — without pulling you off the tools.",
+    typicalTimeline: "Typically 2–4 weeks to go live",
+    challenges: [
+      {
+        title: "A missed call is a missed booking",
+        body: "Customers ring around for the next available slot. If you don't pick up between jobs, they've already booked somewhere else.",
+      },
+      {
+        title: "No-shows cost you a bay",
+        body: "An empty bay because someone forgot their booking is time on the roster you don't get back.",
+      },
+      {
+        title: "Chasing approval on extra work",
+        body: "Found something extra during a service? Getting sign-off by phone tag delays the job and the invoice.",
+      },
+    ],
+    workflows: [
+      {
+        tag: "Call answering",
+        title: "24/7 AI call answering & booking",
+        description:
+          "Every call gets answered, even mid-job. AI captures the vehicle, rego, and what's needed, then books it straight into your diary.",
+        details:
+          "Works the same whether you're under a car or between jobs — nothing depends on you picking up.",
+        steps: [
+          { label: "Call comes in", icon: IconPhone },
+          { label: "AI answers", icon: IconMessage },
+          { label: "Job captured", icon: IconDocument },
+          { label: "Booked in", icon: IconCalendar },
+        ],
+      },
+      {
+        tag: "Reminders",
+        title: "Service & rego reminders",
+        description:
+          "Sends a reminder when a logbook service or rego inspection falls due, so bays stay full without you tracking a spreadsheet.",
+        details:
+          "Runs on its own in the background — repeat business that would otherwise just quietly stop coming back.",
+        steps: [
+          { label: "Service due", icon: IconClock },
+          { label: "Reminder sent", icon: IconBell },
+          { label: "Customer books", icon: IconCalendar },
+          { label: "Job created", icon: IconCheck },
+        ],
+      },
+      {
+        tag: "Confirmations",
+        title: "No-show reduction reminders",
+        description:
+          "Automatic confirmation before every appointment, with a one-tap way to confirm or reschedule — so an empty bay doesn't cost you the morning.",
+        details:
+          "Catches the reschedules early enough that you can actually fill the slot with someone else.",
+        steps: [
+          { label: "Booking made", icon: IconCalendar },
+          { label: "Reminder sent", icon: IconBell },
+          { label: "Customer confirms", icon: IconCheck },
+          { label: "Bay held", icon: IconDocument },
+        ],
+      },
+      {
+        tag: "Approvals",
+        title: "Quote & approval follow-up",
+        description:
+          "Extra work found during a service gets sent to the customer for approval by SMS, and followed up automatically until they respond.",
+        details:
+          "No more leaving a car on the hoist waiting on a callback that might not come until this afternoon.",
+        steps: [
+          { label: "Extra work found", icon: IconAlert, tone: "warn" },
+          { label: "Sent for approval", icon: IconSend },
+          { label: "Follow-up sent", icon: IconBell },
+          { label: "Approved", icon: IconCheck },
+        ],
+      },
+      {
+        tag: "Enquiries",
+        title: "After-hours enquiry chatbot",
+        description:
+          "Handles pricing and availability questions on your website, captures the vehicle and job details, and books the service — even after you've closed up.",
+        details:
+          "You open up to a full diary instead of a list of missed enquiries from the night before.",
+        steps: [
+          { label: "Chat opens", icon: IconMessage },
+          { label: "AI qualifies", icon: IconDocument },
+          { label: "Job captured", icon: IconCheck },
+          { label: "Booked", icon: IconCalendar },
+        ],
+      },
+      {
+        tag: "Reviews",
+        title: "Review request on collection",
+        description:
+          "Job marked complete, and the customer gets a text asking for a review the moment they collect the car.",
+        details:
+          "Timed at the exact moment they're happiest with the work — not days later once they've forgotten.",
+        steps: [
+          { label: "Job complete", icon: IconCheck },
+          { label: "SMS sent", icon: IconMessage },
+          { label: "Link tapped", icon: IconSend },
+          { label: "Review posted", icon: IconStar },
+        ],
+      },
+    ],
+    toolsExamples: ["Xero", "MYOB", "Outlook Calendar", "Google Calendar", "Gmail"],
+    whyNow: {
+      paragraphs: [
+        "Mechanics work is booking-driven — customers ring around for the next available slot, and whoever answers first usually fills their bay first.",
+        "No-shows and slow approvals are pure lost time on a hoist. None of it needs a mechanic's skill, just something consistent handling the admin around the actual work.",
+      ],
+    },
+  },
 ];
 
 export function getIndustry(slug) {
