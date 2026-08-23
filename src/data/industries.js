@@ -852,6 +852,124 @@ export const industries = [
       ],
     },
   },
+  {
+    slug: "real-estate",
+    category: "Property",
+    name: "Real Estate",
+    headline: "AI Receptionist & Lead Qualification for Real Estate Agents in Australia",
+    headlineAccent: "Real Estate Agents",
+    subheadline: "Never let a seller lead go unanswered again.",
+    intro:
+      "Every enquiry that sits unanswered is a listing that might go to someone else. ARS builds AI systems that answer every call, qualify buyers and sellers, and book appraisals — straight into your calendar.",
+    typicalTimeline: "Typically 2–4 weeks to go live",
+    challenges: [
+      {
+        title: "Seller leads go unanswered",
+        body: "A slow reply on a genuine seller enquiry can be the difference between winning the listing and losing it to whoever called back first.",
+      },
+      {
+        title: "Agents drown in unqualified calls",
+        body: "Portal enquiries and open-home sign-ins bury you in calls from people who are months away or outside budget.",
+      },
+      {
+        title: "Property management enquiries never stop",
+        body: "Maintenance requests, rent questions, and applications flood in constantly — most of it routine, none of it optional to answer.",
+      },
+    ],
+    workflows: [
+      {
+        tag: "Call answering",
+        title: "24/7 AI receptionist",
+        description:
+          "Every call and portal enquiry answered instantly. AI captures the property, enquiry type, and contact details, then routes it to the right agent with a full summary.",
+        details:
+          "Works the same for a phone call, a portal enquiry, or a website form — nothing waits until someone's free to check messages.",
+        steps: [
+          { label: "Enquiry in", icon: IconPhone },
+          { label: "AI answers", icon: IconMessage },
+          { label: "Details captured", icon: IconDocument },
+          { label: "Routed to agent", icon: IconPerson },
+        ],
+      },
+      {
+        tag: "Lead qualification",
+        title: "Buyer & seller lead qualification",
+        description:
+          "Qualifies each lead on budget, timeline, and preferred suburbs, then routes the genuinely hot ones straight to you — fully briefed.",
+        details:
+          "You stop spending time on enquiries that were never going to convert, and start every real conversation already briefed.",
+        steps: [
+          { label: "Lead in", icon: IconMessage },
+          { label: "AI qualifies", icon: IconDocument },
+          { label: "Scored", icon: IconCheck },
+          { label: "Routed", icon: IconPerson },
+        ],
+      },
+      {
+        tag: "Appraisals",
+        title: "Appraisal booking automation",
+        description:
+          "Seller enquiry comes in, and a market appraisal gets booked directly into your calendar — the summary's waiting before you even arrive.",
+        details:
+          "The appointment is half-won before it starts, because you already know what they're after.",
+        steps: [
+          { label: "Seller enquiry", icon: IconMessage },
+          { label: "AI qualifies", icon: IconDocument },
+          { label: "Appraisal booked", icon: IconCalendar },
+          { label: "Agent briefed", icon: IconPerson },
+        ],
+      },
+      {
+        tag: "Open homes",
+        title: "Open-home registration & follow-up",
+        description:
+          "Attendees get registered automatically, and a follow-up goes out by SMS and email afterwards to find out who's genuinely interested.",
+        details:
+          "Separates the serious buyers from the sticky-beaks without you having to call every single attendee yourself.",
+        steps: [
+          { label: "Attendee signs in", icon: IconDocument },
+          { label: "Registered", icon: IconCheck },
+          { label: "Follow-up sent", icon: IconSend },
+          { label: "Interest captured", icon: IconStar },
+        ],
+      },
+      {
+        tag: "Property management",
+        title: "Property management triage chatbot",
+        description:
+          "Routine maintenance requests, rent questions, and application enquiries get captured and logged automatically, so your PM only handles what actually needs them.",
+        details:
+          "The routine stuff gets handled on its own; anything that genuinely needs a person still reaches one.",
+        steps: [
+          { label: "Enquiry in", icon: IconMessage },
+          { label: "AI captures details", icon: IconDocument },
+          { label: "Logged", icon: IconCheck },
+          { label: "Routed if needed", icon: IconAlert, tone: "warn" },
+        ],
+      },
+      {
+        tag: "Updates",
+        title: "Vendor & landlord update automation",
+        description:
+          "Campaign updates, inspection feedback, and milestone messages go out automatically, so vendors and landlords stay in the loop without you writing the same update every week.",
+        details:
+          "One less recurring task on your list, and vendors hear from you before they think to chase an update.",
+        steps: [
+          { label: "Milestone reached", icon: IconFlag },
+          { label: "Update drafted", icon: IconDocument },
+          { label: "Sent", icon: IconSend },
+          { label: "Logged", icon: IconCheck },
+        ],
+      },
+    ],
+    toolsExamples: ["Xero", "MYOB", "Outlook Calendar", "Google Calendar", "Gmail"],
+    whyNow: {
+      paragraphs: [
+        "In real estate, speed to lead is everything — a slow response to a genuine seller enquiry is one of the most common reasons agents lose a listing they should have won.",
+        "Qualifying leads and handling routine property management enquiries doesn't need an agent's judgement, just consistency. Automating it means more of your time goes to the conversations that actually convert.",
+      ],
+    },
+  },
 ];
 
 export function getIndustry(slug) {
