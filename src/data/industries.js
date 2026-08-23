@@ -970,6 +970,124 @@ export const industries = [
       ],
     },
   },
+  {
+    slug: "accounting-and-finance",
+    category: "Professional Services",
+    name: "Accounting & Finance",
+    headline: "AI Automation & Answering Service for Accounting Firms in Australia",
+    headlineAccent: "Accounting Firms",
+    subheadline: "Onboard clients in minutes, not hours.",
+    intro:
+      "Onboarding, document chasing, and tax-season enquiries all pile up on top of the actual advisory work. ARS builds AI systems that handle the admin automatically, so your team's time goes to the work that needs their expertise.",
+    typicalTimeline: "Typically 2–4 weeks to go live",
+    challenges: [
+      {
+        title: "Onboarding a new client eats hours",
+        body: "Engagement letters, ID collection, platform setup — it's the same steps every time, and none of it needs an accountant's judgement.",
+      },
+      {
+        title: "Chasing documents never stops",
+        body: "Receipts, statements, signatures — someone always has to follow up, and it's rarely the client who remembers first.",
+      },
+      {
+        title: "Tax season buries the phones",
+        body: "Enquiries spike exactly when your team has the least time to answer them, and a missed call at BAS time is a missed client.",
+      },
+    ],
+    workflows: [
+      {
+        tag: "Onboarding",
+        title: "Client onboarding automation",
+        description:
+          "Engagement letters, document requests, and platform access all get triggered automatically the moment a new client signs on.",
+        details:
+          "The same steps happen the same way every time, without anyone on your team having to remember to chase the next one.",
+        steps: [
+          { label: "Client signs on", icon: IconCheck },
+          { label: "Letter sent", icon: IconMail },
+          { label: "Docs requested", icon: IconDocument },
+          { label: "Access set up", icon: IconSend },
+        ],
+      },
+      {
+        tag: "Call answering",
+        title: "24/7 AI answering & booking",
+        description:
+          "Every client call gets answered, routine questions get handled, and appointments get booked straight into your calendar — even during your busiest weeks.",
+        details:
+          "Works the same in the middle of tax season as it does any other week — nothing depends on someone being free to pick up.",
+        steps: [
+          { label: "Call comes in", icon: IconPhone },
+          { label: "AI answers", icon: IconMessage },
+          { label: "Question handled", icon: IconCheck },
+          { label: "Booked in", icon: IconCalendar },
+        ],
+      },
+      {
+        tag: "Document chasing",
+        title: "Document collection & chasing",
+        description:
+          "Automated requests and reminders collect receipts, statements, and signatures, and keep following up on anything outstanding until it lands.",
+        details:
+          "Nobody on your team has to remember to nag a client for the third time — it just keeps going until it's done.",
+        steps: [
+          { label: "Docs requested", icon: IconSend },
+          { label: "Reminder sent", icon: IconBell },
+          { label: "Received", icon: IconDocument },
+          { label: "Logged", icon: IconCheck },
+        ],
+      },
+      {
+        tag: "Lead capture",
+        title: "Tax-season lead capture",
+        description:
+          "New enquiries through tax and BAS season get captured, qualified, and booked automatically, so a spike in demand becomes new clients instead of missed calls.",
+        details:
+          "Scales the same whether it's a quiet week or the busiest fortnight of the year.",
+        steps: [
+          { label: "Enquiry in", icon: IconMessage },
+          { label: "AI qualifies", icon: IconDocument },
+          { label: "Booked", icon: IconCalendar },
+          { label: "New client", icon: IconCheck },
+        ],
+      },
+      {
+        tag: "Deadlines",
+        title: "Deadline & compliance reminders",
+        description:
+          "Automated reminders for BAS lodgement, tax deadlines, and outstanding documents keep clients on track and cut down the last-minute scramble.",
+        details:
+          "Clients hear from you with time to actually act, instead of a last-minute chase that stresses everyone out.",
+        steps: [
+          { label: "Deadline approaching", icon: IconClock },
+          { label: "Reminder sent", icon: IconBell },
+          { label: "Client responds", icon: IconMessage },
+          { label: "Logged", icon: IconCheck },
+        ],
+      },
+      {
+        tag: "Client FAQ",
+        title: "Client FAQ & status chatbot",
+        description:
+          "Handles routine questions about fees, timelines, and where a job's up to, so your accountants and bookkeepers aren't repeating the same answers all day.",
+        details:
+          "Frees up real time for the advisory conversations that actually need a qualified person.",
+        steps: [
+          { label: "Question asked", icon: IconMessage },
+          { label: "AI answers", icon: IconCheck },
+          { label: "Escalated if needed", icon: IconAlert, tone: "warn" },
+          { label: "Logged", icon: IconDocument },
+        ],
+      },
+    ],
+    toolsExamples: ["Xero", "MYOB", "Outlook Calendar", "Google Calendar", "Gmail"],
+    whyNow: {
+      paragraphs: [
+        "Accounting and bookkeeping firms carry a lot of invisible admin — onboarding, document chasing, routine questions — and most of it doesn't need an accountant's judgement, just consistency.",
+        "Tax and BAS season is when this admin load and new-client demand both spike at once. Handling the routine parts automatically means your qualified people spend their time on advisory work, while client data is still handled carefully, in line with the Australian Privacy Principles.",
+      ],
+    },
+  },
 ];
 
 export function getIndustry(slug) {
