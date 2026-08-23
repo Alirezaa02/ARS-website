@@ -1,13 +1,14 @@
 import { useEffect } from "react";
 
 const SITE = "https://www.arswebservices.com";
+const DEFAULT_IMAGE = "/og-image.png";
 
 function setMeta(selector, attr, value) {
   const tag = document.querySelector(selector);
   if (tag) tag.setAttribute(attr, value);
 }
 
-export function useSEO({ title, description, path = "", noindex = false }) {
+export function useSEO({ title, description, path = "", noindex = false, image = "" }) {
   useEffect(() => {
     if (!title) return;
     const url = `${SITE}${path}`;
@@ -19,6 +20,9 @@ export function useSEO({ title, description, path = "", noindex = false }) {
     setMeta('meta[property="og:url"]', "content", url);
     setMeta('meta[name="twitter:title"]', "content", title);
     setMeta('meta[name="twitter:description"]', "content", description);
+    const imageUrl = `${SITE}${image || DEFAULT_IMAGE}`;
+    setMeta('meta[property="og:image"]', "content", imageUrl);
+    setMeta('meta[name="twitter:image"]', "content", imageUrl);
 
     let robots = document.querySelector('meta[name="robots"]');
     if (noindex) {
@@ -31,7 +35,7 @@ export function useSEO({ title, description, path = "", noindex = false }) {
     } else if (robots) {
       robots.remove();
     }
-  }, [title, description, path, noindex]);
+  }, [title, description, path, noindex, image]);
 }
 
 export function useJsonLd(id, data) {

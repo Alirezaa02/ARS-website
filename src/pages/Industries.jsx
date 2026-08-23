@@ -9,6 +9,7 @@ export default function Industries() {
     description:
       "AI customer service systems built for your industry — see how ARS helps trades and service businesses across Australia stop missing work.",
     path: "/industries",
+    image: "/og-industries.png",
   });
 
   return (

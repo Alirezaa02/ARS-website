@@ -498,6 +498,242 @@ export const industries = [
       ],
     },
   },
+  {
+    slug: "pest-control",
+    category: "Trades",
+    name: "Pest Control",
+    headline: "AI Answering Service for Pest Control Businesses in Australia",
+    headlineAccent: "Pest Control Businesses",
+    subheadline: "Never miss an after-hours callout again.",
+    intro:
+      "Pests don't wait for business hours, and neither do your competitors. ARS builds AI systems that answer every call, qualify the job, and book treatments — without you picking up at 10pm.",
+    typicalTimeline: "Typically 2–4 weeks to go live",
+    challenges: [
+      {
+        title: "Urgent jobs go to whoever answers first",
+        body: "Rats in the kitchen at 10pm means calling the first three pest controllers on Google. Whoever picks up wins the job.",
+      },
+      {
+        title: "The same questions, every single call",
+        body: "Termites, cockroaches, ants, rodents — the qualifying questions barely change, and answering them still eats your day.",
+      },
+      {
+        title: "Recurring treatments slip through the cracks",
+        body: "Annual inspections and quarterly treatments are revenue you already earned. No reminder usually means no repeat booking.",
+      },
+    ],
+    workflows: [
+      {
+        tag: "Call & triage",
+        title: "24/7 call answering & emergency triage",
+        description:
+          "Every call gets answered instantly, day or night. AI captures pest type and property details, then books the job or escalates genuine emergencies straight to you.",
+        details:
+          "Genuine emergencies go straight to your on-call tech; everything else gets booked without needing you on the phone at all.",
+        steps: [
+          { label: "Call comes in", icon: IconPhone },
+          { label: "AI assesses", icon: IconAlert, tone: "warn" },
+          { label: "Job captured", icon: IconDocument },
+          { label: "Booked or escalated", icon: IconCalendar },
+        ],
+      },
+      {
+        tag: "Quote chatbot",
+        title: "Website quote & booking chatbot",
+        description:
+          "Handles \"how much for a termite inspection\" questions on your website, gives an indicative price, and books the job before they check a competitor.",
+        details:
+          "Keeps the conversation moving instead of losing them to whoever answers their next open tab first.",
+        steps: [
+          { label: "Chat opens", icon: IconMessage },
+          { label: "AI qualifies", icon: IconDocument },
+          { label: "Price given", icon: IconDollar },
+          { label: "Booked", icon: IconCalendar },
+        ],
+      },
+      {
+        tag: "Inspections",
+        title: "Annual inspection reminders",
+        description:
+          "Sends a reminder at the 12-month mark for termite inspections and periodic treatments — recurring revenue that runs itself.",
+        details:
+          "Most customers won't call back on their own until they see a problem. This brings them back on schedule instead.",
+        steps: [
+          { label: "Treatment logged", icon: IconDocument },
+          { label: "12 months on", icon: IconClock },
+          { label: "Reminder sent", icon: IconBell },
+          { label: "Booked in", icon: IconCalendar },
+        ],
+      },
+      {
+        tag: "Quote follow-up",
+        title: "Quote follow-up automation",
+        description:
+          "Inspection quote sent, then a follow-up sequence runs on its own until the customer books or declines — no hot lead left to go cold.",
+        details:
+          "Stops automatically the moment they respond either way — no awkward reminder after they've already said yes.",
+        steps: [
+          { label: "Quote sent", icon: IconMail },
+          { label: "SMS reminder", icon: IconBell },
+          { label: "Follow-up sent", icon: IconSend },
+          { label: "Booked", icon: IconCheck },
+        ],
+      },
+      {
+        tag: "Reviews",
+        title: "Review request on completion",
+        description:
+          "Job marked done, and the customer gets a text asking for a Google review while it's still fresh in their mind.",
+        details:
+          "Timed right after the job, not days later once they've forgotten how quickly the problem was sorted.",
+        steps: [
+          { label: "Job complete", icon: IconCheck },
+          { label: "SMS sent", icon: IconMessage },
+          { label: "Link tapped", icon: IconSend },
+          { label: "Review posted", icon: IconStar },
+        ],
+      },
+      {
+        tag: "Warranty",
+        title: "Warranty & re-treatment scheduling",
+        description:
+          "Treatments under warranty get logged automatically, and any re-treatment request is captured and booked without chasing paperwork.",
+        details:
+          "One less thing for your team to track manually, and customers covered under warranty never fall through the cracks.",
+        steps: [
+          { label: "Treatment logged", icon: IconDocument },
+          { label: "Warranty tracked", icon: IconCheck },
+          { label: "Re-treatment asked", icon: IconMessage },
+          { label: "Booked", icon: IconCalendar },
+        ],
+      },
+    ],
+    toolsExamples: ["Xero", "MYOB", "Outlook Calendar", "Google Calendar", "Gmail"],
+    whyNow: {
+      paragraphs: [
+        "Pest control is a speed-to-lead business — when someone's got cockroaches in the kitchen, they're calling multiple businesses in a row until someone picks up. Whoever answers first usually wins, regardless of price.",
+        "Inspection reminders and re-treatment follow-ups are recurring revenue most businesses already earned once and then just let go quiet. None of it needs a technician's skill, just consistency.",
+      ],
+    },
+  },
+  {
+    slug: "curtains-and-blinds",
+    category: "Trades",
+    name: "Curtains & Blinds",
+    headline: "AI for Curtains & Blinds Businesses in Australia",
+    headlineAccent: "Curtains & Blinds Businesses",
+    subheadline: "Book the measure, send the quote, close the job — automatically.",
+    intro:
+      "Customers shop around before they buy curtains or blinds. ARS builds AI systems that answer every enquiry, book the measurement, and get the quote out before they choose someone else.",
+    typicalTimeline: "Typically 2–4 weeks to go live",
+    challenges: [
+      {
+        title: "Slow follow-up loses the sale",
+        body: "Customers usually get a few quotes before deciding. Whoever replies first, and keeps following up, usually wins the job.",
+      },
+      {
+        title: "Booking measurements eats your day",
+        body: "Back-and-forth to find a time that works is real admin, and it's not the part of the job you actually get paid for.",
+      },
+      {
+        title: "Repeat business goes unclaimed",
+        body: "A customer who did the living room often needs the bedrooms too, but nobody's asking until they think to call.",
+      },
+    ],
+    workflows: [
+      {
+        tag: "Call answering",
+        title: "24/7 AI call answering",
+        description:
+          "Every call gets answered straight away. AI captures what they need and books them in for a measurement — even after hours.",
+        details:
+          "Works the same whether it's a call during work hours or someone browsing your site at 9pm.",
+        steps: [
+          { label: "Call comes in", icon: IconPhone },
+          { label: "AI answers", icon: IconMessage },
+          { label: "Enquiry captured", icon: IconDocument },
+          { label: "Measurement booked", icon: IconCalendar },
+        ],
+      },
+      {
+        tag: "Measurement & quoting",
+        title: "Measurement & quote booking",
+        description:
+          "Enquiry comes in, AI checks your real calendar and books a measurement time, confirms details with the customer, then sends the quote automatically once measurements are in.",
+        details:
+          "This is the same system already built and running for a real ARS client in this exact trade — enquiry to booked measurement to quote, no manual back-and-forth in between.",
+        steps: [
+          { label: "Enquiry in", icon: IconMessage },
+          { label: "Measurement booked", icon: IconCalendar },
+          { label: "Details confirmed", icon: IconCheck },
+          { label: "Quote sent", icon: IconSend },
+        ],
+      },
+      {
+        tag: "Quote chatbot",
+        title: "Website quote chatbot",
+        description:
+          "Asks about window count, style, and budget on your website, then books a measurement instead of leaving them to fill in a form and wait.",
+        details:
+          "Filters out the just-looking enquiries, so your time goes to people who are actually ready to book.",
+        steps: [
+          { label: "Chat opens", icon: IconMessage },
+          { label: "AI asks questions", icon: IconDocument },
+          { label: "Lead qualified", icon: IconCheck },
+          { label: "Booked", icon: IconCalendar },
+        ],
+      },
+      {
+        tag: "Installation",
+        title: "Installation scheduling & reminders",
+        description:
+          "Once a quote's accepted, the install gets booked and the customer gets a reminder automatically as the date approaches.",
+        details:
+          "One less thing to track manually, and fewer no-shows on install day.",
+        steps: [
+          { label: "Quote accepted", icon: IconCheck },
+          { label: "Install booked", icon: IconCalendar },
+          { label: "Reminder sent", icon: IconBell },
+          { label: "Confirmed", icon: IconMessage },
+        ],
+      },
+      {
+        tag: "Quote follow-up",
+        title: "Quote follow-up automation",
+        description:
+          "Quote sent, then a follow-up sequence runs on its own until the customer books or declines — no lead left to go cold while you're on another job.",
+        details:
+          "Stops automatically the moment they respond either way — no awkward reminder after they've already said yes.",
+        steps: [
+          { label: "Quote sent", icon: IconMail },
+          { label: "SMS reminder", icon: IconBell },
+          { label: "Follow-up sent", icon: IconSend },
+          { label: "Booked", icon: IconCheck },
+        ],
+      },
+      {
+        tag: "Reviews & referrals",
+        title: "Review & referral request",
+        description:
+          "Job marked complete, and the customer's asked for a review and whether they've got other rooms in mind — while they're still happy with the result.",
+        details:
+          "Timed right after installation, when the new curtains or blinds are freshest in their mind.",
+        steps: [
+          { label: "Job complete", icon: IconCheck },
+          { label: "Review asked", icon: IconMessage },
+          { label: "Review posted", icon: IconStar },
+          { label: "Referral captured", icon: IconUsers },
+        ],
+      },
+    ],
+    toolsExamples: ["Xero", "MYOB", "Outlook Calendar", "Google Calendar", "Gmail"],
+    whyNow: {
+      paragraphs: [
+        "Curtains and blinds is a considered purchase — customers compare a few quotes before deciding, and speed of response is often the deciding factor, not just price.",
+        "Measurement bookings and quote follow-ups are the exact admin that eats a day without earning anything extra. Handling it automatically means more of your time goes to actually measuring and installing.",
+      ],
+    },
+  },
 ];
 
 export function getIndustry(slug) {

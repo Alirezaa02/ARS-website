@@ -26,7 +26,7 @@ export default function IndustryPageTemplate({ industry }) {
   const title = `${headline} | ARS`;
   const description = `${subheadline} ARS builds custom AI customer service systems for ${name.toLowerCase()} businesses in Australia.`;
 
-  useSEO({ title, description, path });
+  useSEO({ title, description, path, image: "/og-industries.png" });
 
   useJsonLd(`industry-schema-${slug}`, {
     "@context": "https://schema.org",
