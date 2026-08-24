@@ -1,0 +1,28 @@
+# ARS
+
+> ARS (AI Support & Web) builds custom AI customer service systems and websites for Australian small businesses — trades especially. Based in Brisbane, Australia.
+
+ARS builds AI agents that answer calls and website enquiries, check calendar availability, and book jobs automatically for small businesses. It also builds custom business websites, including bundles that combine a website with an AI system. Every system is custom-built per business, not off-the-shelf software.
+
+## Company
+- [Home](https://www.arswebservices.com/): Overview of ARS and its AI customer service systems.
+- [Services](https://www.arswebservices.com/services): What ARS builds — AI phone/chat answering, scheduling, and website design.
+- [Pricing](https://www.arswebservices.com/pricing): AI system tiers (Starter, Growth, Complete) and website pricing.
+- [Book a demo](https://www.arswebservices.com/book): Free live demo booking.
+- [Contact](https://www.arswebservices.com/contact): Contact details and enquiry form.
+
+## Industries served
+Dedicated pages covering what ARS builds for each industry, common challenges, and example AI workflows:
+- [Electrical](https://www.arswebservices.com/industries/electrical)
+- [Plumbing](https://www.arswebservices.com/industries/plumbing)
+- [Air Conditioning](https://www.arswebservices.com/industries/air-conditioning)
+- [Building & Construction](https://www.arswebservices.com/industries/construction)
+- [Pest Control](https://www.arswebservices.com/industries/pest-control)
+- [Curtains & Blinds](https://www.arswebservices.com/industries/curtains-and-blinds)
+- [Mechanics](https://www.arswebservices.com/industries/mechanics)
+- [Real Estate](https://www.arswebservices.com/industries/real-estate)
+- [Accounting & Finance](https://www.arswebservices.com/industries/accounting-and-finance)
+- [Restaurants](https://www.arswebservices.com/industries/restaurants)
+- [Parts Suppliers](https://www.arswebservices.com/industries/parts-suppliers)
+- [Barbershops](https://www.arswebservices.com/industries/barbershops)
+- [All industries](https://www.arswebservices.com/industries)
