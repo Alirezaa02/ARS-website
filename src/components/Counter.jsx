@@ -7,14 +7,13 @@ export default function Counter({ value, suffix = "", prefix = "", display, deci
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
   const mv = useMotionValue(0);
-  const [text, setText] = useState(prefix + "0" + suffix);
+  const [text, setText] = useState(display ?? prefix + "0" + suffix);
 
   useEffect(() => {
+    // Static (non-animated) values are shown immediately — no need to wait
+    // on scroll-into-view detection for text that doesn't count up anyway.
+    if (display) return;
     if (!inView) return;
-    if (display) {
-      setText(display);
-      return;
-    }
     const controls = animate(mv, value, {
       duration: 1.6,
       ease: [0.22, 1, 0.36, 1],
