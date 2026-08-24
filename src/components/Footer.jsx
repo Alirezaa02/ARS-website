@@ -90,6 +90,16 @@ export default function Footer() {
                 <li><a href="mailto:hello@arswebservices.com" className="text-slate-400 hover:text-accent">hello@arswebservices.com</a></li>
                 <li><a href="tel:+61424853125" className="text-slate-400 hover:text-accent">0424 853 125</a></li>
                 <li><span className="text-slate-400">Brisbane, AU</span></li>
+                <li>
+                  <a
+                    href="https://g.page/r/CZt3Z_49ibhSECE/review"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-slate-400 hover:text-accent"
+                  >
+                    Leave us a review
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
