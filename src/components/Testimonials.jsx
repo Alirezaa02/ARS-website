@@ -39,7 +39,7 @@ export default function Testimonials() {
               Custom AI agent
             </span>
           </div>
-          <p className="mt-1 text-xs text-slate-500">Blinds &amp; curtains installer</p>
+          <p className="mt-1 text-xs text-slate-500">Blinds &amp; curtains Company</p>
 
           <ol className="mt-6 space-y-3">
             {steps.map((step, i) => (
