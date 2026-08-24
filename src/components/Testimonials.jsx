@@ -26,7 +26,14 @@ export default function Testimonials() {
         >
           <div className="flex items-center justify-between">
             <h3 className="font-display text-lg font-semibold text-white">
-              Atlas Blinds &amp; Curtains
+              <a
+                href="https://atlasblindandcurtain.com.au/"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-accent"
+              >
+                Atlas Blinds &amp; Curtains
+              </a>
             </h3>
             <span className="rounded-full border border-accent/20 bg-accent/5 px-3 py-1 font-mono text-xs uppercase tracking-wider text-accent">
               Custom AI agent
