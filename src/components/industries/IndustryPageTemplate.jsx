@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import { Reveal } from "../../lib/motion";
 import { useSEO, useJsonLd } from "../../lib/seo";
 import { WorkflowCard } from "./WorkflowDiagram";
-import { howItWorks } from "../../data/industries";
+import FAQSection from "./FAQSection";
+import { howItWorks, faqs } from "../../data/industries";
 import Aurora from "../Aurora";
 
 export default function IndustryPageTemplate({ industry }) {
@@ -35,6 +36,16 @@ export default function IndustryPageTemplate({ industry }) {
     description,
     areaServed: "AU",
     provider: { "@type": "Organization", name: "ARS", url: "https://www.arswebservices.com" },
+  });
+
+  useJsonLd(`industry-faq-${slug}`, {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
   });
 
   return (
@@ -215,6 +226,19 @@ export default function IndustryPageTemplate({ industry }) {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section">
+        <Reveal className="mx-auto max-w-2xl text-center">
+          <span className="eyebrow">Common questions</span>
+          <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-white md:text-4xl">
+            Before you book a demo
+          </h2>
+        </Reveal>
+        <Reveal delay={0.1} className="mt-14">
+          <FAQSection faqs={faqs} />
+        </Reveal>
       </section>
 
       {/* Final CTA */}
