@@ -59,8 +59,8 @@ export default function BookDemo() {
             <div className="glass mt-10 rounded-xl p-5">
               <p className="text-sm text-slate-400">
                 Prefer to talk first? Reach me directly at{" "}
-                <a href="mailto:saebalireza02@gmail.com" className="text-accent hover:underline">
-                  saebalireza02@gmail.com
+                <a href="mailto:hello@arswebservices.com" className="text-accent hover:underline">
+                  hello@arswebservices.com
                 </a>
                 .
               </p>

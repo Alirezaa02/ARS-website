@@ -122,8 +122,8 @@ export default function Privacy() {
           <p className={p}>
             You can ask us what information we hold about you, ask us to correct it, or ask us
             to delete it, at any time — just email{" "}
-            <a href="mailto:saebalireza02@gmail.com" className="text-accent hover:underline">
-              saebalireza02@gmail.com
+            <a href="mailto:hello@arswebservices.com" className="text-accent hover:underline">
+              hello@arswebservices.com
             </a>
             .
           </p>
@@ -137,8 +137,8 @@ export default function Privacy() {
           <h2 className={h2}>Contact</h2>
           <p className={p}>
             Questions about this policy? Email{" "}
-            <a href="mailto:saebalireza02@gmail.com" className="text-accent hover:underline">
-              saebalireza02@gmail.com
+            <a href="mailto:hello@arswebservices.com" className="text-accent hover:underline">
+              hello@arswebservices.com
             </a>
             .
           </p>

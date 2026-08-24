@@ -78,8 +78,8 @@ export default function Terms() {
           <h2 className={h2}>Contact</h2>
           <p className={p}>
             Questions about these terms? Email{" "}
-            <a href="mailto:saebalireza02@gmail.com" className="text-accent hover:underline">
-              saebalireza02@gmail.com
+            <a href="mailto:hello@arswebservices.com" className="text-accent hover:underline">
+              hello@arswebservices.com
             </a>
             .
           </p>
