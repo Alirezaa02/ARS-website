@@ -71,8 +71,8 @@ export default function Footer() {
             <div>
               <h4 className="mb-3 font-mono text-xs uppercase tracking-widest text-slate-500">Product</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link to="/services" className="text-slate-400 hover:text-accent">AI system</Link></li>
-                <li><Link to="/services" className="text-slate-400 hover:text-accent">Websites</Link></li>
+                <li><Link to="/services#ai-system" className="text-slate-400 hover:text-accent">AI system</Link></li>
+                <li><Link to="/services#websites" className="text-slate-400 hover:text-accent">Websites</Link></li>
                 <li><Link to="/industries" className="text-slate-400 hover:text-accent">Industries</Link></li>
                 <li><Link to="/pricing" className="text-slate-400 hover:text-accent">Pricing</Link></li>
               </ul>

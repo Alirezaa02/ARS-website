@@ -29,10 +29,24 @@ import PartsSuppliers from "./pages/industries/PartsSuppliers";
 import Barbershops from "./pages/industries/Barbershops";
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   useEffect(() => {
+    if (hash) {
+      let attempts = 0;
+      const tryScroll = () => {
+        const el = document.querySelector(hash);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else if (attempts < 10) {
+          attempts += 1;
+          setTimeout(tryScroll, 50);
+        }
+      };
+      tryScroll();
+      return;
+    }
     window.scrollTo(0, 0);
-  }, [pathname]);
+  }, [pathname, hash]);
   return null;
 }
 

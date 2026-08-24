@@ -4,6 +4,7 @@ import { Reveal } from "../lib/motion";
 
 const services = [
   {
+    id: "ai-system",
     tag: "AI system",
     title: "AI Customer Service System",
     body: "A complete AI team-member that handles enquiries across email, web forms, and phone — capturing leads, summarising them for your approval, and booking jobs into your calendar.",
@@ -17,6 +18,7 @@ const services = [
     featured: true,
   },
   {
+    id: "websites",
     tag: "Websites",
     title: "Custom Business Websites",
     body: "A fast, modern website that actually brings work in — designed around your brand, built up to 12 pages, and wired to feed straight into your AI customer service system if you use both.",
@@ -49,9 +51,10 @@ export default function Services() {
         {services.map((s, i) => (
           <Reveal key={s.title} delay={i * 0.1}>
             <motion.div
+              id={s.id}
               whileHover={{ y: -5 }}
               transition={{ type: "spring", stiffness: 280, damping: 22 }}
-              className={`relative h-full overflow-hidden rounded-2xl border p-8 ${
+              className={`relative h-full scroll-mt-28 overflow-hidden rounded-2xl border p-8 ${
                 s.featured
                   ? "border-accent/30 bg-gradient-to-br from-accent/[0.08] to-transparent"
                   : "glass"
