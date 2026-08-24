@@ -26,6 +26,7 @@ import RealEstate from "./pages/industries/RealEstate";
 import AccountingAndFinance from "./pages/industries/AccountingAndFinance";
 import Restaurants from "./pages/industries/Restaurants";
 import PartsSuppliers from "./pages/industries/PartsSuppliers";
+import Barbershops from "./pages/industries/Barbershops";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -92,6 +93,7 @@ export default function App() {
           <Route path="/industries/accounting-and-finance" element={<Page><AccountingAndFinance /></Page>} />
           <Route path="/industries/restaurants" element={<Page><Restaurants /></Page>} />
           <Route path="/industries/parts-suppliers" element={<Page><PartsSuppliers /></Page>} />
+          <Route path="/industries/barbershops" element={<Page><Barbershops /></Page>} />
           <Route path="/privacy" element={<Page><Privacy /></Page>} />
           <Route path="/terms" element={<Page><Terms /></Page>} />
           <Route path="*" element={<Page><NotFound /></Page>} />

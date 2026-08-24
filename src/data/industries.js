@@ -1324,6 +1324,124 @@ export const industries = [
       ],
     },
   },
+  {
+    slug: "barbershops",
+    category: "Personal Care",
+    name: "Barbershops",
+    headline: "AI for Barbershops & Hair Salons in Australia",
+    headlineAccent: "Barbershops & Hair Salons",
+    subheadline: "Fill every chair, even when you're mid-cut.",
+    intro:
+      "You can't answer the phone with scissors in hand. ARS builds AI systems that answer every call, book the appointment, and keep chairs full — without pulling you away from a client.",
+    typicalTimeline: "Typically 2–4 weeks to go live",
+    challenges: [
+      {
+        title: "A missed call is a missed booking",
+        body: "Customers ring around for the next available slot. If you don't pick up between clients, they've already booked somewhere else.",
+      },
+      {
+        title: "No-shows leave a chair empty",
+        body: "A chair booked and not filled is time on the roster you don't get back.",
+      },
+      {
+        title: "The same questions, every day",
+        body: "Walk-in availability, pricing, opening hours — answering it live between cuts eats into the day.",
+      },
+    ],
+    workflows: [
+      {
+        tag: "Call answering",
+        title: "24/7 AI call answering & booking",
+        description:
+          "Every call gets answered, even mid-cut. AI checks who's free, books the appointment, and confirms it straight away.",
+        details:
+          "Works the same whether you're between clients or fully booked out for the day — nothing depends on someone being free to pick up.",
+        steps: [
+          { label: "Call comes in", icon: IconPhone },
+          { label: "AI answers", icon: IconMessage },
+          { label: "Availability checked", icon: IconCalendar },
+          { label: "Booked & confirmed", icon: IconCheck },
+        ],
+      },
+      {
+        tag: "Online bookings",
+        title: "Website booking chatbot",
+        description:
+          "Handles service, barber, and time preference on your website, then books straight into your calendar — no back-and-forth needed.",
+        details:
+          "Works the same at 11pm on a Sunday as it does during business hours, so you open up to a booked-out week.",
+        steps: [
+          { label: "Chat opens", icon: IconMessage },
+          { label: "AI asks preferences", icon: IconDocument },
+          { label: "Time confirmed", icon: IconCalendar },
+          { label: "Booked", icon: IconCheck },
+        ],
+      },
+      {
+        tag: "Confirmations",
+        title: "No-show reduction reminders",
+        description:
+          "Automatic confirmation goes out before every appointment, with a one-tap way to confirm or reschedule — so an empty chair doesn't cost you the afternoon.",
+        details:
+          "Catches cancellations early enough that the slot can actually be re-filled, not just written off.",
+        steps: [
+          { label: "Booking made", icon: IconCalendar },
+          { label: "Reminder sent", icon: IconBell },
+          { label: "Customer confirms", icon: IconCheck },
+          { label: "Chair held or released", icon: IconDocument },
+        ],
+      },
+      {
+        tag: "FAQ",
+        title: "Pricing & availability chatbot",
+        description:
+          "Opening hours, pricing, and walk-in availability get answered automatically, so you're not stopping mid-cut to check your phone.",
+        details:
+          "Handles the repeat questions on its own, and only sends through the ones that actually need you.",
+        steps: [
+          { label: "Question asked", icon: IconMessage },
+          { label: "AI answers", icon: IconCheck },
+          { label: "Escalated if needed", icon: IconAlert, tone: "warn" },
+          { label: "Logged", icon: IconDocument },
+        ],
+      },
+      {
+        tag: "Rebooking",
+        title: "Rebooking reminders",
+        description:
+          "Sends a reminder when a regular's due for their next cut, so your chair stays full without you tracking who's overdue.",
+        details:
+          "Runs in the background with zero effort from you — repeat business that would otherwise just quietly stop.",
+        steps: [
+          { label: "Last visit logged", icon: IconDocument },
+          { label: "Due date approaches", icon: IconClock },
+          { label: "Reminder sent", icon: IconBell },
+          { label: "Rebooked", icon: IconCalendar },
+        ],
+      },
+      {
+        tag: "Reviews",
+        title: "Review request after the appointment",
+        description:
+          "Appointment marked complete, and the customer gets a text asking for a Google review while the cut's still fresh.",
+        details:
+          "Timed right after the appointment, not days later once they've forgotten how sharp it looked.",
+        steps: [
+          { label: "Appointment complete", icon: IconCheck },
+          { label: "SMS sent", icon: IconMessage },
+          { label: "Link tapped", icon: IconSend },
+          { label: "Review posted", icon: IconStar },
+        ],
+      },
+    ],
+    toolsExamples: ["Xero", "MYOB", "Outlook Calendar", "Google Calendar", "Gmail"],
+    whyNow: {
+      paragraphs: [
+        "Barbershops and salons are booking-driven — customers ring around for the next available slot, and whoever answers first usually fills their chair first.",
+        "No-shows and rebooking reminders are the exact admin that eats time without earning anything extra. Automating it means more of your day goes to the client actually in the chair.",
+      ],
+    },
+  },
 ];
 
 export function getIndustry(slug) {
