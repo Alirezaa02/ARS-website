@@ -1,8 +1,21 @@
 import { chromium } from "playwright";
+import sparticuzChromium from "@sparticuz/chromium";
 import { preview } from "vite";
 import { readFileSync, mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+
+// Vercel's build container is missing the system libraries Playwright's own
+// downloaded Chromium needs to launch, so use the statically-linked
+// serverless build there instead. Locally (macOS/Linux dev machines),
+// Playwright's normal locally-installed Chromium works fine.
+async function launchBrowser() {
+  if (!process.env.VERCEL) return chromium.launch();
+  return chromium.launch({
+    args: sparticuzChromium.args,
+    executablePath: await sparticuzChromium.executablePath(),
+  });
+}
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const PORT = 4319;
@@ -24,7 +37,7 @@ async function main() {
   const server = await preview({ root, preview: { port: PORT, strictPort: true } });
   const base = `http://localhost:${PORT}`;
 
-  const browser = await chromium.launch();
+  const browser = await launchBrowser();
   const page = await browser.newPage();
   const pageErrors = [];
   page.on("pageerror", (err) => pageErrors.push(err));
