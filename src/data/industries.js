@@ -1206,6 +1206,124 @@ export const industries = [
       ],
     },
   },
+  {
+    slug: "parts-suppliers",
+    category: "Trade Suppliers",
+    name: "Parts Suppliers",
+    headline: "AI for Parts Suppliers & Trade Wholesalers in Australia",
+    headlineAccent: "Parts Suppliers & Trade Wholesalers",
+    subheadline: "Answer the phone during the counter rush, not after it.",
+    intro:
+      "Tradies want a stock answer now, not a callback. ARS builds AI systems that answer enquiries, keep trade accounts moving, and chase what needs chasing — without pulling anyone off the counter.",
+    typicalTimeline: "Typically 2–4 weeks to go live",
+    challenges: [
+      {
+        title: "A stock question means a phone call",
+        body: "If nobody picks up to confirm you've got it in stock, the customer just rings the next supplier on the list.",
+      },
+      {
+        title: "Trade accounts chase their own invoices",
+        body: "Someone has to remember which accounts are overdue and follow them up — real time that isn't spent serving the counter.",
+      },
+      {
+        title: "Reorders get forgotten",
+        body: "Regular customers who'd reorder the same parts on their own timeline just quietly go elsewhere if nobody reminds them.",
+      },
+    ],
+    workflows: [
+      {
+        tag: "Call answering",
+        title: "24/7 AI call answering",
+        description:
+          "Every call gets answered, even during the counter rush. AI captures what's needed and gets it to the right person to quote or fulfil.",
+        details:
+          "Works the same during a flat-out Monday morning as it does after you've closed for the day.",
+        steps: [
+          { label: "Call comes in", icon: IconPhone },
+          { label: "AI answers", icon: IconMessage },
+          { label: "Enquiry captured", icon: IconDocument },
+          { label: "Sent to you", icon: IconSend },
+        ],
+      },
+      {
+        tag: "Stock enquiries",
+        title: "Stock & price enquiry chatbot",
+        description:
+          "Handles the \"have you got this in stock\" and \"how much for...\" questions on your website, and only sends through the ones that actually need a person.",
+        details:
+          "Filters the quick questions from the ones that need a real answer, so counter staff aren't stuck on the phone mid-serve.",
+        steps: [
+          { label: "Question asked", icon: IconMessage },
+          { label: "AI checks details", icon: IconDocument },
+          { label: "Answered or escalated", icon: IconAlert, tone: "warn" },
+          { label: "Logged", icon: IconCheck },
+        ],
+      },
+      {
+        tag: "Trade accounts",
+        title: "Trade account order updates",
+        description:
+          "Order confirmations and dispatch updates go out automatically, so trade customers always know where their order's up to without ringing to ask.",
+        details:
+          "One less thing for counter staff to relay by phone in between serving walk-ins.",
+        steps: [
+          { label: "Order placed", icon: IconCheck },
+          { label: "Confirmation sent", icon: IconMail },
+          { label: "Status updated", icon: IconDocument },
+          { label: "Customer notified", icon: IconSend },
+        ],
+      },
+      {
+        tag: "Backorders",
+        title: "Backorder & restock notifications",
+        description:
+          "When something's out of stock, the customer gets notified the moment it's back in, instead of ringing every few days to check.",
+        details:
+          "Keeps the sale instead of losing it to whoever picks up the phone once they restock somewhere else first.",
+        steps: [
+          { label: "Item out of stock", icon: IconAlert, tone: "warn" },
+          { label: "Customer notified", icon: IconMessage },
+          { label: "Restock logged", icon: IconDocument },
+          { label: "Order confirmed", icon: IconCheck },
+        ],
+      },
+      {
+        tag: "Payment follow-up",
+        title: "Trade account invoice reminders",
+        description:
+          "Overdue account invoices get a polite, automatic reminder sequence before it ever needs an awkward phone call from you.",
+        details:
+          "Keeps the relationship intact while still getting accounts paid on time.",
+        steps: [
+          { label: "Invoice overdue", icon: IconAlert, tone: "warn" },
+          { label: "Day 1 reminder", icon: IconMessage },
+          { label: "Day 7 follow-up", icon: IconMail },
+          { label: "Escalated if needed", icon: IconBell, tone: "warn" },
+        ],
+      },
+      {
+        tag: "Reorders",
+        title: "Repeat order reminders",
+        description:
+          "Regular customers get a reminder when they're due to reorder consumables or common parts, so repeat business doesn't just quietly stop.",
+        details:
+          "Runs in the background with zero effort from your team — the kind of repeat revenue that's easy to let slip.",
+        steps: [
+          { label: "Order history tracked", icon: IconDocument },
+          { label: "Reorder due", icon: IconClock },
+          { label: "Reminder sent", icon: IconBell },
+          { label: "Order placed", icon: IconCheck },
+        ],
+      },
+    ],
+    toolsExamples: ["Xero", "MYOB", "Outlook Calendar", "Google Calendar", "Gmail"],
+    whyNow: {
+      paragraphs: [
+        "Parts suppliers live on speed of answer — a tradie who can't get through on a stock question is usually already calling the next supplier on the list, price aside.",
+        "Backorder notifications, account reminders, and reorder prompts don't need a counter person's product knowledge, just consistency. Automating the admin means more of your team's time goes to actually serving the counter.",
+      ],
+    },
+  },
 ];
 
 export function getIndustry(slug) {
