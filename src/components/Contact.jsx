@@ -26,6 +26,9 @@ export default function Contact({ standalone = false }) {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Something went wrong.");
       setSent(true);
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "generate_lead", { event_category: "engagement" });
+      }
     } catch (err) {
       setError(err.message || "Something went wrong. Try again or email hello@arswebservices.com directly.");
     } finally {

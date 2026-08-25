@@ -21,6 +21,16 @@ function CalendlyWidget() {
     document.body.appendChild(script);
   }, []);
 
+  useEffect(() => {
+    const onMessage = (e) => {
+      if (e.data?.event === "calendly.event_scheduled" && typeof window.gtag === "function") {
+        window.gtag("event", "schedule_demo", { event_category: "engagement" });
+      }
+    };
+    window.addEventListener("message", onMessage);
+    return () => window.removeEventListener("message", onMessage);
+  }, []);
+
   return (
     <div
       className="calendly-inline-widget"
