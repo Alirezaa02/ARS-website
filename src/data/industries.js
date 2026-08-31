@@ -1117,6 +1117,14 @@ export const industries = [
     intro:
       "You're running service, not sitting by a phone. ARS builds AI systems that answer every call, take the booking, and keep tables full — without pulling anyone off the floor.",
     typicalTimeline: "Typically 2–4 weeks to go live",
+    demoConversation: {
+      label: "AI Receptionist",
+      customerMessage: "Hi, do you have a table for 4 Friday at 7:30?",
+      aiMessage: "Yes — you're booked, Friday 7:30, party of 4. Can I grab a name?",
+      confirmTitle: "Booking confirmed",
+      confirmSubject: "Table for 4",
+      confirmDetails: "Friday · 7:30pm · Party of 4",
+    },
     challenges: [
       {
         title: "A missed call is a missed table",

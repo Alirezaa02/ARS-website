@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Reveal } from "../../lib/motion";
 import { useSEO, useJsonLd } from "../../lib/seo";
 import { WorkflowCard } from "./WorkflowDiagram";
+import LiveConversationDemo from "./LiveConversationDemo";
 import FAQSection from "./FAQSection";
 import { howItWorks, faqs } from "../../data/industries";
 import Aurora from "../Aurora";
@@ -21,6 +22,7 @@ export default function IndustryPageTemplate({ industry }) {
     workflows,
     toolsExamples,
     whyNow,
+    demoConversation,
   } = industry;
 
   const path = `/industries/${slug}`;
@@ -136,6 +138,16 @@ export default function IndustryPageTemplate({ industry }) {
             Every system is custom-built. Here's what's possible.
           </p>
         </Reveal>
+
+        {demoConversation && (
+          <Reveal className="relative mx-auto mt-14 max-w-md">
+            <p className="mb-4 text-center font-mono text-xs uppercase tracking-widest text-slate-500">
+              Watch it happen
+            </p>
+            <LiveConversationDemo demo={demoConversation} />
+          </Reveal>
+        )}
+
         <div className="relative mx-auto mt-14 grid max-w-5xl gap-5 md:grid-cols-2">
           {workflows.map((w, i) => (
             <Reveal key={w.title} delay={i * 0.08}>
