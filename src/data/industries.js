@@ -55,6 +55,16 @@ export const industries = [
     intro:
       "You're on site, not by a screen. ARS builds AI systems that answer enquiries, read the paperwork, and keep clients updated — so you can stay on the build.",
     typicalTimeline: "Typically 2–4 weeks to go live",
+    demoConversation: {
+      label: "AI Enquiry Assistant",
+      customerMessage:
+        "Hi, we need a quote for a 60sqm granny flat in New Farm, keen to start in about 2 months.",
+      aiMessage:
+        "Got it — I've logged that as a qualified enquiry and sent it through to the team, they'll be in touch shortly.",
+      confirmTitle: "Lead qualified",
+      confirmSubject: "Granny flat — 60sqm",
+      confirmDetails: "New Farm · Start in ~2 months",
+    },
     challenges: [
       {
         title: "A missed call is a missed tender",
