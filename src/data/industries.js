@@ -183,6 +183,16 @@ export const industries = [
     intro:
       "You can't answer the phone with both hands in a switchboard. ARS builds AI systems that answer every call, qualify the job, and get it booked in — without you touching your phone.",
     typicalTimeline: "Typically 2–4 weeks to go live",
+    demoConversation: {
+      label: "AI Receptionist",
+      customerMessage:
+        "Hi, my switchboard's tripped and won't reset — can someone come out today? I'm in Ascot.",
+      aiMessage:
+        "That's urgent — I've booked you in for an emergency callout this afternoon in Ascot, someone will call ahead.",
+      confirmTitle: "Callout booked",
+      confirmSubject: "Emergency — switchboard fault",
+      confirmDetails: "Ascot · This afternoon",
+    },
     challenges: [
       {
         title: "A missed call is a missed callout",
@@ -301,6 +311,15 @@ export const industries = [
     intro:
       "Emergencies don't wait for business hours. ARS builds AI systems that answer every call, work out what's urgent, and get routine jobs booked — without you picking up at 2am.",
     typicalTimeline: "Typically 2–4 weeks to go live",
+    demoConversation: {
+      label: "AI Receptionist",
+      customerMessage: "Burst pipe under the kitchen sink, water everywhere — can someone come now?",
+      aiMessage:
+        "That's an emergency — I've flagged it urgent and got you booked for the next available slot, someone will call to confirm.",
+      confirmTitle: "Emergency triaged",
+      confirmSubject: "Burst pipe — kitchen",
+      confirmDetails: "Urgent · Next available slot",
+    },
     challenges: [
       {
         title: "A burst pipe won't wait",
