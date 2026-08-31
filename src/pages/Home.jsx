@@ -3,6 +3,7 @@ import HowItWorks from "../components/HowItWorks";
 import Features from "../components/Features";
 import Pricing from "../components/Pricing";
 import Testimonials from "../components/Testimonials";
+import HomeFAQ from "../components/HomeFAQ";
 import Contact from "../components/Contact";
 import { useSEO } from "../lib/seo";
 
@@ -21,6 +22,7 @@ export default function Home() {
       <Features />
       <Pricing compact />
       <Testimonials />
+      <HomeFAQ />
       <Contact />
     </>
   );
