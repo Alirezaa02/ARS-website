@@ -7,4 +7,12 @@ export const blogPosts = [
     date: "2026-08-19",
     readTime: "5 min read",
   },
+  {
+    slug: "ai-for-restaurant-bookings-no-shows",
+    title: "How Restaurants Are Using AI to Stop Losing Tables to No-Shows",
+    description:
+      "Missed calls during service and no-shows both cost restaurants real revenue. Here's how AI reservation answering and reminders fix both — in plain English.",
+    date: "2026-08-31",
+    readTime: "4 min read",
+  },
 ];
