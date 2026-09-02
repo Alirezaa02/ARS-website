@@ -15,4 +15,12 @@ export const blogPosts = [
     date: "2026-08-31",
     readTime: "4 min read",
   },
+  {
+    slug: "ai-for-plumbing-businesses",
+    title: "AI for Plumbing Businesses: How It Actually Works in Australia",
+    description:
+      "A burst pipe doesn't wait for business hours, and neither do your competitors. Here's exactly what an AI system does for a plumbing business — in plain English.",
+    date: "2026-09-02",
+    readTime: "4 min read",
+  },
 ];
