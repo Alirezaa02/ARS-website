@@ -438,6 +438,14 @@ export const industries = [
     intro:
       "When temperatures spike, enquiries triple. ARS builds AI systems that answer every call, book every job, and keep your technicians focused on installs — not the phone.",
     typicalTimeline: "Typically 2–4 weeks to go live",
+    demoConversation: {
+      label: "AI Receptionist",
+      customerMessage: "Hi, need a quote for ducted AC — 4-bed house, budget around $12k.",
+      aiMessage: "Got it — I've booked a site assessment for Thursday 2pm to spec it properly.",
+      confirmTitle: "Assessment booked",
+      confirmSubject: "Ducted AC — 4-bed home",
+      confirmDetails: "Thursday · 2:00pm · Site assessment",
+    },
     challenges: [
       {
         title: "Peak season overwhelms the phones",
@@ -556,6 +564,14 @@ export const industries = [
     intro:
       "Pests don't wait for business hours, and neither do your competitors. ARS builds AI systems that answer every call, qualify the job, and book treatments — without you picking up at 10pm.",
     typicalTimeline: "Typically 2–4 weeks to go live",
+    demoConversation: {
+      label: "AI Receptionist",
+      customerMessage: "Found a rat in the kitchen, can someone come tonight?",
+      aiMessage: "I can get that booked as urgent — you're locked in for tonight, technician will call ahead.",
+      confirmTitle: "Job booked",
+      confirmSubject: "Urgent — rodent treatment",
+      confirmDetails: "Tonight · Kitchen · Escalated",
+    },
     challenges: [
       {
         title: "Urgent jobs go to whoever answers first",
@@ -674,6 +690,14 @@ export const industries = [
     intro:
       "Customers shop around before they buy curtains or blinds. ARS builds AI systems that answer every enquiry, book the measurement, and get the quote out before they choose someone else.",
     typicalTimeline: "Typically 2–4 weeks to go live",
+    demoConversation: {
+      label: "AI Receptionist",
+      customerMessage: "Hi, need blinds quoted for 3 living room windows.",
+      aiMessage: "I've booked a measure for Thursday 10am — quote goes out right after.",
+      confirmTitle: "Measurement booked",
+      confirmSubject: "Blinds — 3 windows",
+      confirmDetails: "Thursday · 10:00am · Living room",
+    },
     challenges: [
       {
         title: "Slow follow-up loses the sale",
