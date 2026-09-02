@@ -816,6 +816,14 @@ export const industries = [
     intro:
       "You can't answer the phone with your hands under a bonnet. ARS builds AI systems that answer every call, book the service, and chase what needs chasing — without pulling you off the tools.",
     typicalTimeline: "Typically 2–4 weeks to go live",
+    demoConversation: {
+      label: "AI Receptionist",
+      customerMessage: "Hi, my Corolla's making a grinding noise braking, can I get it looked at this week?",
+      aiMessage: "I've booked you in Wednesday 9am for a brake check — just bring it in.",
+      confirmTitle: "Booking confirmed",
+      confirmSubject: "Brake check — Corolla",
+      confirmDetails: "Wednesday · 9:00am",
+    },
     challenges: [
       {
         title: "A missed call is a missed booking",
@@ -934,6 +942,14 @@ export const industries = [
     intro:
       "Every enquiry that sits unanswered is a listing that might go to someone else. ARS builds AI systems that answer every call, qualify buyers and sellers, and book appraisals — straight into your calendar.",
     typicalTimeline: "Typically 2–4 weeks to go live",
+    demoConversation: {
+      label: "AI Receptionist",
+      customerMessage: "Hi, thinking of selling — 4-bed house in New Farm, keen for an appraisal.",
+      aiMessage: "I've booked you an appraisal for Thursday 2pm — the agent will come briefed and ready.",
+      confirmTitle: "Appraisal booked",
+      confirmSubject: "4-bed house — New Farm",
+      confirmDetails: "Thursday · 2:00pm",
+    },
     challenges: [
       {
         title: "Seller leads go unanswered",
@@ -1052,6 +1068,14 @@ export const industries = [
     intro:
       "Onboarding, document chasing, and tax-season enquiries all pile up on top of the actual advisory work. ARS builds AI systems that handle the admin automatically, so your team's time goes to the work that needs their expertise.",
     typicalTimeline: "Typically 2–4 weeks to go live",
+    demoConversation: {
+      label: "AI Receptionist",
+      customerMessage: "Hi, new business, need help getting set up for tax time — can I book a chat?",
+      aiMessage: "Sure — I've booked you in for a 20-minute intro call Tuesday 10am.",
+      confirmTitle: "Appointment booked",
+      confirmSubject: "New client intro call",
+      confirmDetails: "Tuesday · 10:00am · 20 min",
+    },
     challenges: [
       {
         title: "Onboarding a new client eats hours",
@@ -1296,6 +1320,14 @@ export const industries = [
     intro:
       "Tradies want a stock answer now, not a callback. ARS builds AI systems that answer enquiries, keep trade accounts moving, and chase what needs chasing — without pulling anyone off the counter.",
     typicalTimeline: "Typically 2–4 weeks to go live",
+    demoConversation: {
+      label: "AI Receptionist",
+      customerMessage: "G'day, have you got brake pads in stock for a Hilux?",
+      aiMessage: "Yep, in stock — I've sent that through to the counter, ready for pickup today.",
+      confirmTitle: "Enquiry sent",
+      confirmSubject: "Brake pads — Hilux",
+      confirmDetails: "In stock · Ready for pickup",
+    },
     challenges: [
       {
         title: "A stock question means a phone call",
@@ -1414,6 +1446,14 @@ export const industries = [
     intro:
       "You can't answer the phone with scissors in hand. ARS builds AI systems that answer every call, book the appointment, and keep chairs full — without pulling you away from a client.",
     typicalTimeline: "Typically 2–4 weeks to go live",
+    demoConversation: {
+      label: "AI Receptionist",
+      customerMessage: "Hi, can I get a haircut Saturday, around midday?",
+      aiMessage: "Yep — you're booked for Saturday 12pm, see you then.",
+      confirmTitle: "Booking confirmed",
+      confirmSubject: "Haircut",
+      confirmDetails: "Saturday · 12:00pm",
+    },
     challenges: [
       {
         title: "A missed call is a missed booking",
