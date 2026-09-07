@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const HOST = "www.arswebservices.com";
-const KEY = "73deb9eadd454925a2fe4f0995c42006";
+const KEY = "e3288632e414e8a4bc62eeafb28bd0dd";
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 
 function urlsFromSitemap() {
