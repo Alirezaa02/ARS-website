@@ -23,4 +23,12 @@ export const blogPosts = [
     date: "2026-09-02",
     readTime: "4 min read",
   },
+  {
+    slug: "ai-for-construction-companies",
+    title: "AI for Builders & Construction Companies: How It Actually Works",
+    description:
+      "A missed call is a missed tender, and paperwork eats the hours you don't have. Here's exactly what an AI system does for a construction business — in plain English.",
+    date: "2026-09-13",
+    readTime: "4 min read",
+  },
 ];

@@ -18,6 +18,7 @@ const Blog = lazy(() => import("./pages/Blog"));
 const AiAnsweringServiceCostAustralia = lazy(() => import("./pages/blog/AiAnsweringServiceCostAustralia"));
 const AiForRestaurantBookingsNoShows = lazy(() => import("./pages/blog/AiForRestaurantBookingsNoShows"));
 const AiForPlumbingBusinesses = lazy(() => import("./pages/blog/AiForPlumbingBusinesses"));
+const AiForConstructionCompanies = lazy(() => import("./pages/blog/AiForConstructionCompanies"));
 const Industries = lazy(() => import("./pages/Industries"));
 const Construction = lazy(() => import("./pages/industries/Construction"));
 const Electrical = lazy(() => import("./pages/industries/Electrical"));
@@ -107,6 +108,10 @@ export default function App() {
             <Route
               path="/blog/ai-for-plumbing-businesses"
               element={<Page><AiForPlumbingBusinesses /></Page>}
+            />
+            <Route
+              path="/blog/ai-for-construction-companies"
+              element={<Page><AiForConstructionCompanies /></Page>}
             />
             <Route path="/industries" element={<Page><Industries /></Page>} />
             <Route path="/industries/construction" element={<Page><Construction /></Page>} />
