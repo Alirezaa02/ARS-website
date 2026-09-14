@@ -5,7 +5,7 @@ import { useSEO, useJsonLd } from "../../lib/seo";
 import { WorkflowCard } from "./WorkflowDiagram";
 import LiveConversationDemo from "./LiveConversationDemo";
 import FAQSection from "./FAQSection";
-import { howItWorks, faqs } from "../../data/industries";
+import { howItWorks, faqs } from "../../data/shared";
 import Aurora from "../Aurora";
 
 export default function IndustryPageTemplate({ industry }) {

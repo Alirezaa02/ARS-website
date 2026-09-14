@@ -1,7 +1,7 @@
 import { Reveal } from "../lib/motion";
 import { useJsonLd } from "../lib/seo";
 import FAQSection from "./industries/FAQSection";
-import { faqs } from "../data/industries";
+import { faqs } from "../data/shared";
 
 export default function HomeFAQ() {
   useJsonLd("home-faq-schema", {
