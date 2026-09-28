@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://www.arswebservices.com/blog</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -57,6 +57,12 @@
   <url>
     <loc>https://www.arswebservices.com/blog/ai-for-construction-companies</loc>
     <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.arswebservices.com/blog/ai-for-pest-control-businesses</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

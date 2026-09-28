@@ -31,4 +31,12 @@ export const blogPosts = [
     date: "2026-09-13",
     readTime: "4 min read",
   },
+  {
+    slug: "ai-for-pest-control-businesses",
+    title: "AI for Pest Control Businesses: How It Actually Works in Australia",
+    description:
+      "Rats in the kitchen at 10pm means calling the first three pest controllers on Google. Here's exactly what an AI system does for a pest control business — in plain English.",
+    date: "2026-09-29",
+    readTime: "4 min read",
+  },
 ];
