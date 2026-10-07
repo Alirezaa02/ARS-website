@@ -39,4 +39,12 @@ export const blogPosts = [
     date: "2026-09-29",
     readTime: "4 min read",
   },
+  {
+    slug: "ai-for-air-conditioning-businesses",
+    title: "AI for Air Conditioning & HVAC Businesses: How It Actually Works",
+    description:
+      "When temperatures spike, enquiries triple — and every missed call in peak season is a job that just went to someone else. Here's exactly what an AI system does for an air conditioning business, in plain English.",
+    date: "2026-10-08",
+    readTime: "4 min read",
+  },
 ];
