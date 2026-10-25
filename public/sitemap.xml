@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://www.arswebservices.com/blog</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -69,6 +69,12 @@
   <url>
     <loc>https://www.arswebservices.com/blog/ai-for-air-conditioning-businesses</loc>
     <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.arswebservices.com/blog/ai-for-electrical-contractors</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

@@ -47,4 +47,12 @@ export const blogPosts = [
     date: "2026-10-08",
     readTime: "4 min read",
   },
+  {
+    slug: "ai-for-electrical-contractors",
+    title: "AI for Electricians in Australia: How It Actually Works",
+    description:
+      "You can't answer the phone with both hands in a switchboard. Here's exactly what an AI system does for an electrical contracting business — in plain English.",
+    date: "2026-10-25",
+    readTime: "4 min read",
+  },
 ];
