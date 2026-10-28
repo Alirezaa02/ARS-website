@@ -28,6 +28,11 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "Enter a valid email address." });
   }
 
+  const within = (v, max) => v == null || (typeof v === "string" && v.length <= max);
+  if (!within(name, 100) || !within(email, 200) || !within(business, 200) || !within(message, 5000)) {
+    return res.status(400).json({ error: "One or more fields are too long." });
+  }
+
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { error } = await resend.emails.send({
